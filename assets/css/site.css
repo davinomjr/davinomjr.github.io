@@ -1,0 +1,323 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.container-parallax {
+    /* The image used */
+    background-image: url("../images/background-test.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.m-r-10{
+    margin-right: 10px !important;
+}
+
+.m-t-50{
+    margin-top: 50px !important;
+}
+
+.m-b-250{
+    margin-bottom: 250px;
+}
+
+.h-150{
+    height: 150px !important;
+}
+
+.h-180{
+    height: 180px !important;
+}
+
+.h-200{
+    height: 200px !important;
+}
+
+.h-220{
+    height: 220px !important;
+}
+
+.h-300{
+    height: 300px !important;
+}
+
+.h-500 {
+    height: 500px !important;
+}
+
+.h-700 {
+    height: 700px !important;
+}
+
+.h-1000 {
+    height: 1000px !important;
+}
+
+
+/* Parallax */
+.parallax {
+    /* The image used */
+    background-image: url("../images/background.jpg");
+
+    /* Set a specific height */
+    min-height: 750px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*****/
+
+
+.body-content{
+    width: 100%;
+    padding: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centered-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Center div */
+.v-wrap {
+    height: 700px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+    .v-wrap:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        /* adjust for white space between pseudo element and next sibling */
+        margin-right: -.25em;
+        /* stretch line height */
+        height: 100%;
+    }
+
+.v-box {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+/****/
+
+.breaker {
+    margin: 0 auto;
+    max-width: 100px;
+}
+
+.w-180{
+    width: 180px !important;
+}
+
+.w-200{
+    width: 200px !important;
+}
+
+.w-220 {
+    width: 220px !important;
+}
+
+.w-250{
+    width: 250px !important;
+}
+
+.w-300{
+    width: 300px !important;
+}
+
+.w-350{
+    width: 350px !important;
+}
+
+.list-skills{
+    font-size: 25px;
+}
+
+.skill-icon{
+    width: 150px;
+    height: 150px;
+}
+
+.m-t-20{
+    margin-top: 20px;
+}
+
+#researcher-box {
+    background-color: #bfbfbf;
+}
+
+/* BIG BUTTONS */
+
+.big-button {
+    display: inline-block;
+    margin: 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 8px 0 #ababab, 0 15px 20px rgba(0, 0, 0, .35);
+    -moz-box-shadow: 0 8px 0 #ababab, 0 15px 20px rgba(0, 0, 0, .35);
+    box-shadow: 0 8px 0 #ababab, 0 15px 20px rgba(0, 0, 0, .35);
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    -moz-transition: -moz-box-shadow .1s ease-in-out;
+    -o-transition: -o-box-shadow .1s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
+    font-size: 30px;
+    color: #fff;
+    width: 215px;
+    padding:0 ;
+}
+
+    .big-button span {
+        display: inline-block;
+        padding: 20px 30px;
+        background-color: #000;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(hsla(64, 0%, 10%, .8)), to(hsla(64, 0%, 10%, .8)));
+        background-image: -webkit-linear-gradient(hsla(64, 4%, 30%, .8), hsla(64, 0%, 10%, .8));
+        background-image: -moz-linear-gradient(hsla(64, 0%, 10%, .8), hsla(64, 0%, 10%, .8));
+        background-image: -o-linear-gradient(hsla(64, 0%, 10%, .8), hsla(64, 0%, 10%, .8));
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, .15);
+        font-family: 'Pacifico', Arial, sans-serif;
+        line-height: 1;
+        text-shadow: 0 -1px 1px rgba(45, 45, 45, .7);
+        -webkit-transition: background-color .2s ease-in-out, -webkit-transform .1s ease-in-out;
+        -moz-transition: background-color .2s ease-in-out, -moz-transform .1s ease-in-out;
+        -o-transition: background-color .2s ease-in-out, -o-transform .1s ease-in-out;
+        transition: background-color .2s ease-in-out, transform .1s ease-in-out;
+        width: 100% !important;
+    }
+
+    .big-button:hover span {
+        background-color: #fff;
+        text-shadow: 0 -1px 1px rgba(0, 0, 0, .9), 0 0 5px rgba(255, 255, 255, .8);
+        color: black;
+    }
+
+    .big-button:active, .button:focus {
+        -webkit-box-shadow: 0 8px 0 #000, 0 12px 10px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 8px 0 #000, 0 12px 10px rgba(0, 0, 0, .3);
+        box-shadow: 0 8px 0 #000, 0 12px 10px rgba(0, 0, 0, .3);
+    }
+
+        .big-button:active span {
+            -webkit-transform: translate(0, 4px);
+            -moz-transform: translate(0, 4px);
+            -o-transform: translate(0, 4px);
+            transform: translate(0, 4px);
+        }
+/**/
+
+.footnote {
+    font-size: 15px
+}
+
+/** NAVBAR */
+.header .navbar {
+    background-color: #383838;
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+
+.p-l-80{
+    padding-left: 80px !important;
+}
+
+.p-t-50{
+    padding-top: 50px !important;
+}
+
+a {
+    color: #d64533;
+}
+
+    a:visited {
+        color: #9e1100;
+    }
+
+.horizontal-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.horizontal-icons li {
+    display: inline-block;
+    margin: 0 3px 0 3px;
+}
+
+    .horizontal-icons li a {
+        color: white;
+    }
+
+.no-break {
+    white-space: nowrap;
+}
