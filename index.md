@@ -17,8 +17,8 @@ layout: default
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#software-engineer-box">Software Engineer</a></li>
-                        <li><a href="#researcher-box">Researcher</a></li>
+                        <li><a href="#software-engineer">Software Engineer</a></li>
+                        <li><a href="#researcher">Researcher</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,7 +69,7 @@ layout: default
     </div>
 </div>
 
-<div class="row no-padding h-1000" id="software-engineer-box" style="font-size:36px">
+<div class="row no-padding h-1000" id="software-engineer" style="font-size:36px">
     <div class="col-md-12 m-t-20">
         <div class="v-wrap h-500">
             <article class="v-box">
@@ -142,7 +142,7 @@ layout: default
 
 <div class="breaker"></div>
 
-<div class="row no-padding h-1000" id="researcher-box" style="font-size:36px">
+<div class="row no-padding h-1000" id="researcher" style="font-size:36px">
     <div class="col-md-12">
         <div class="v-wrap h-500">
             <article class="v-box">
