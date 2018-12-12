@@ -177,6 +177,10 @@ body {
     width: 220px !important;
 }
 
+.w-230{
+    width: 230px !important;
+}
+
 .w-250{
     width: 250px !important;
 }
@@ -199,11 +203,11 @@ body {
 }
 
 .m-t-20{
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
-#researcher-box {
-    background-color: #bfbfbf;
+#researcher {
+    background-color: #cac9c9;
 }
 
 /* BIG BUTTONS */

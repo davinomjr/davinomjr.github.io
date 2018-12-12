@@ -33,7 +33,7 @@ layout: default
                 <p style="font-size:40px; color: white">Hello, I'm Davino</p>
             </div>
             <img src="/assets/images/Me.jpg" class="centered-img" alt="personal-photo" />
-            <ul class="horizontal-icons list-unstyled m-t-50 m-r-10">
+            <ul class="horizontal-icons list-unstyled m-t-20 m-r-10">
                 <li>
                     <a href="https://github.com/davinomjr/">
                         <i class="fab fa-3x fa-github"></i>
@@ -95,7 +95,7 @@ layout: default
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-4">
-                            <img src="/assets/images/web-development.png" class="centered-img w-220 h-220" alt="web dev image" />
+                            <img src="/assets/images/web-development.png" class="centered-img w-230 h-220" alt="web dev image" />
                             <ul class="list-unstyled list-skills">
                                 <li>JavaScript</li>
                                 <li>HTML</li>
@@ -112,7 +112,7 @@ layout: default
                                 <img src="/assets/images/git.png" class="w-300 h-150" alt="git image" />
                             </div>
                             <div class="col-md-12">
-                                <img src="/assets/images/web-services.jpg" class="w-220 h-180" alt="web-services image" />
+                                <img src="/assets/images/web-services.jpg" class="w-230 h-180" alt="web-services image" />
                             </div>
                             <div class="col-md-12 p-l-80">
                                 <img src="/assets/images/sql.png" class="w-180" alt="sql image" />
@@ -121,7 +121,7 @@ layout: default
 
 
                         <div class="col-md-4">
-                            <img src="/assets/images/android-development.jpg" class="centered-img w-220" alt="android dev image" />
+                            <img src="/assets/images/android-development.jpg" class="centered-img w-230" alt="android dev image" />
                             <ul class="list-unstyled list-skills">
                                 <li>Java</li>
                                 <li>Kotlin</li>
@@ -170,7 +170,7 @@ layout: default
                 <div class="row" style="margin-top:30px;">
                     <div class="col-md-12">
                         <div class="col-md-6">
-                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-220 h-220" alt="smart homeimage" />
+                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-230 h-220" alt="smart homeimage" />
                             <h4>
                                 Targeting IoT app development,
                                 <a href="https://github.com/earlence/FlowFence_Release">FlowFence</a> is a
@@ -184,7 +184,7 @@ layout: default
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 h-220" alt="iot android image" />
+                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-230 h-220" alt="iot android image" />
                             <h4>
                                 We did a comprehensive analysis of IoT apps responsible for controlling the Top 100 best-selling IoT devices
                                 on the Amazon website to verify whether these apps contained potential
