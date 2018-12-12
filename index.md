@@ -13,12 +13,12 @@ layout: default
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Davino Mauro Junior</a>
+                    <a href="#" class="navbar-brand">Davino Mauro Junior</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="#software-engineer-box">Software Engineer</a></li>
-                        <li><a href="#researcher-box">Graduate Researcher</a></li>
+                        <li><a href="#researcher-box">Researcher</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,7 +30,7 @@ layout: default
     <div class="v-wrap">
         <article class="v-box">
             <div>
-                <p style="font-size:30px; color: white">Hello, I'm Davino</p>
+                <p style="font-size:40px; color: white">Hello, I'm Davino</p>
             </div>
             <img src="/assets/images/Me.jpg" class="centered-img" alt="personal-photo" />
             <ul class="horizontal-icons list-unstyled m-t-50 m-r-10">
@@ -88,7 +88,7 @@ layout: default
                                 Active both on Web and Mobile development, I've worked at the industry for 2+ years as a Web developer
                                 and 3+ years on Mobile development as a self-employment consultant.
                             </h4>
-                            <h4 style="margin-top: 15px;">Below are some of the technologies I've experience with.</h4>
+                            <h4 style="margin-top: 15px;">Below are some of the technologies I have experience with.</h4>
                         </div>
                     </div>
                 </div>
@@ -108,13 +108,13 @@ layout: default
                         </div>
 
                         <div class="col-md-4">
+                            <div class="col-md-12 m-t-20">
+                                <img src="/assets/images/git.png" class="w-300 h-150" alt="git image" />
+                            </div>
                             <div class="col-md-12">
                                 <img src="/assets/images/web-services.jpg" class="w-220 h-180" alt="web-services image" />
                             </div>
-                            <div class="col-md-12">
-                                <img src="/assets/images/git.png" class="w-300 h-150" alt="git image" />
-                            </div>
-                            <div class="col-md-12 m-t-20 p-l-80">
+                            <div class="col-md-12 p-l-80">
                                 <img src="/assets/images/sql.png" class="w-180" alt="sql image" />
                             </div>
                         </div>
@@ -210,7 +210,7 @@ layout: default
                 <div class="row">
                     <div class="col-md-12">
                         <a href="mailto:davinomaurojr@gmail.com" class="big-button">
-                            <span>Hire me</span>
+                            <span>Contact me</span>
                         </a>
                     </div>
                 </div>
