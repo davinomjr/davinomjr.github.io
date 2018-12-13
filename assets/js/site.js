@@ -6,6 +6,7 @@
 $(document).ready(function(){
     $("div.navbar-fixed-top").autoHidingNavbar();
     createSmoothTransitionLinks();
+    setParallaxHeight();
 });
 
 function createSmoothTransitionLinks(){
@@ -45,4 +46,9 @@ function createSmoothTransitionLinks(){
         }
       }
     });
+}
+
+function setParallaxHeight(){
+  var height = $(window).height();
+  $(".parallax").css("height", height);
 }
