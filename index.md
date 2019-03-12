@@ -192,7 +192,7 @@ layout: default
                                 could be leveraged to create attacks and exploit the smart devices*.
                             </h4>
                             <p class="footnote">
-                                *Paper has been accepted to SafeThings'19 and will be available soon. A CoRR version can be found <a href="https://arxiv.org/abs/1901.10062">here</a>.
+                                *Paper has been accepted to SafeThings'19 and will be available soon. CoRR extended version <a href="https://arxiv.org/abs/1901.10062">here</a>.
                             </p>
                         </div>
                     </div>
