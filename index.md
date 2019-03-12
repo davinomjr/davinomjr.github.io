@@ -160,8 +160,8 @@ layout: default
                         <div class="col-md-6 col-md-push-3">
                             <h4>
                                 Graduated on Computer Science (C.S.), I'm currently finishing my Masters at
-                                <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a> on Software Engineering. As a Graduate Researcher, I'm part of a joint-effort
-                                <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">project</a> between US and Brazil addressing security problems on the Internet of Things (IoT).
+                                <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a> on Software Engineering. As a Graduate Researcher, I'm part of a
+                                <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">joint-effort project</a> between US and Brazil addressing security problems on the Internet of Things (IoT). For more information, please refer to the official <a href="https://iot-flows.cin.ufpe.br/">web page</a> of the project.
                             </h4>
                             <h4>Below are some of the work I'm involved with.</h4>
                         </div>
@@ -200,7 +200,7 @@ layout: default
                         <div class="col-md-6 col-md-push-3">
                             <img src="/assets/images/iot-flows.png" class="centered-img w-200 h-220" alt="IoT-Flows image" />
                             <h4>
-                                We're proposing a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against traditional and new attacks*.
+                                We're proposing a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
                             </h4>
                             <p class="footnote">
                                 *Paper has been accepted to SERP4IoT'19 and will be available soon.
