@@ -30,28 +30,33 @@ layout: default
     <div class="v-wrap">
         <article class="v-box">
             <div>
-                <p style="font-size:40px; color: white">Hello, I'm Davino</p>
+                <p style="font-size:40px; color: white">Hello, I'm Davino ;)</p>
             </div>
             <img src="/assets/images/Me.jpg" class="centered-img" alt="personal-photo" />
             <ul class="horizontal-icons list-unstyled m-t-20 m-r-10">
                 <li>
-                    <a href="https://github.com/davinomjr/">
+                    <a href="https://github.com/davinomjr/" title="GitHub">
                         <i class="fab fa-3x fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/davino-junior-a54868105/">
+                    <a href="https://www.linkedin.com/in/davino-junior-a54868105/" title="LinkedIn">
                         <i class="fab fa-3x fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="mailto:davinomaurojr@gmail.com">
+                    <a href="mailto:davinomaurojr@gmail.com" title="Mail">
                         <i class="fas fa-3x fa-envelope-square"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="skype:davinomaurojr@hotmail.com">
+                    <a href="skype:davinomaurojr@hotmail.com" title="Skype">
                         <i class="fab fa-3x fa-skype"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dblp.org/pers/hd/j/Junior:Davino_Mauro" title="DBLP">
+                        <i class="fab fa-3x fa-sistrix"></i>
                     </a>
                 </li>
             </ul>
@@ -85,7 +90,7 @@ layout: default
                     <div class="col-md-12">
                         <div class="col-md-4 col-md-push-4">
                             <h4>
-                                Active both on Web and Mobile development, I've worked at the industry for 2+ years as a Web developer
+                                Active on both Web and Mobile development, I've worked at the industry for 4+ years as a Web developer
                                 and 3+ years on Mobile development as a self-employment consultant.
                             </h4>
                             <h4 style="margin-top: 15px;">Below are some of the technologies I have experience with.</h4>
@@ -95,31 +100,28 @@ layout: default
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-4">
-                            <img src="/assets/images/web-development.png" class="centered-img w-230 h-220" alt="web dev image" />
+                            <img src="/assets/images/web-development.png" class="centered-img w-220 h-220" alt="web dev image" />
                             <ul class="list-unstyled list-skills">
-                                <li>JavaScript</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
                                 <li>C#</li>
+                                <li>Java</li>
+                                <li>JavaScript</li>
+                                <li>HTML/CSS/jQuery</li>
                                 <li>ASP.NET MVC</li>
+                                <li>Liferay</li>
                                 <li>Ruby on Rails</li>
                             </ul>
                         </div>
-
                         <div class="col-md-4">
                             <div class="col-md-12 m-t-20">
-                                <img src="/assets/images/git.png" class="w-300 h-150" alt="git image" />
+                                <img src="/assets/images/git.png" class="w-270 h-130" alt="git image" />
                             </div>
                             <div class="col-md-12">
                                 <img src="/assets/images/web-services.jpg" class="w-230 h-180" alt="web-services image" />
                             </div>
                             <div class="col-md-12 p-l-80">
-                                <img src="/assets/images/sql.png" class="w-180" alt="sql image" />
+                                <img src="/assets/images/sql.png" class="w-180 h-180" alt="sql image" />
                             </div>
                         </div>
-
-
                         <div class="col-md-4">
                             <img src="/assets/images/android-development.jpg" class="centered-img w-230" alt="android dev image" />
                             <ul class="list-unstyled list-skills">
@@ -127,14 +129,13 @@ layout: default
                                 <li>Kotlin</li>
                                 <li>React Extensions</li>
                                 <li>Firebase</li>
-                                <li>Web Services</li>
-                                <li>React Native</li>
                                 <li>API/SDK</li>
+                                <li>Program Analysis</li>
+                                <li>Security</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </article>
         </div>
     </div>
@@ -142,7 +143,7 @@ layout: default
 
 <div class="breaker"></div>
 
-<div class="row no-padding h-1000" id="researcher" style="font-size:36px">
+<div class="row no-padding h-1300" id="researcher" style="font-size:36px">
     <div class="col-md-12">
         <div class="v-wrap h-500">
             <article class="v-box">
@@ -159,9 +160,8 @@ layout: default
                         <div class="col-md-6 col-md-push-3">
                             <h4>
                                 Graduated on Computer Science (C.S.), I'm currently finishing my Masters at
-                                <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a> (also in C.S on the Software Engineering area).
-                                As a Graduate Researcher, I'm part of a joint-effort
-                                <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">project</a> between US and Brazil targeting to address security problems on IoT infrastructures.
+                                <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a> on Software Engineering. As a Graduate Researcher, I'm part of a joint-effort
+                                <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">project</a> between US and Brazil addressing security problems on the Internet of Things (IoT).
                             </h4>
                             <h4>Below are some of the work I'm involved with.</h4>
                         </div>
@@ -170,21 +170,21 @@ layout: default
                 <div class="row" style="margin-top:30px;">
                     <div class="col-md-12">
                         <div class="col-md-6">
-                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-230 h-220" alt="smart homeimage" />
+                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-220 h-220" alt="smart-home image" />
                             <h4>
-                                Targeting IoT app development,
+                                Targeting IoT applications,
                                 <a href="https://github.com/earlence/FlowFence_Release">FlowFence</a> is a
                                 framework built for development of secure IoT applications on the Android platform.
-                                In conjunction with the University of Michigan (UMICH) under supervision of Prof.
+                                Together with the University of Michigan (UMICH) and under supervision of Prof.
                                 <a href="http://web.eecs.umich.edu/~aprakash/">Atul Prakash</a>, I've extended the FlowFence framework to support
                                 protection of sensitive UI data and network requests on Android apps*.
                             </h4>
                             <p class="footnote">
-                                *Paper can be seen <a href="https://arxiv.org/abs/1810.13367">here</a>.
+                                *Published paper can be seen <a href="https://www.researchgate.net/publication/328651530_Securing_IoT_Apps_with_Fine-grained_Control_of_Information_Flows">here</a>.
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-230 h-220" alt="iot android image" />
+                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 h-220" alt="iot android image" />
                             <h4>
                                 We did a comprehensive analysis of IoT apps responsible for controlling the Top 100 best-selling IoT devices
                                 on the Amazon website to verify whether these apps contained potential
@@ -192,8 +192,18 @@ layout: default
                                 could be leveraged to create attacks and exploit the smart devices*.
                             </h4>
                             <p class="footnote">
-                                *Work has been submitted to a Software Engineer conference and should be disclosured
-                                after acceptance notification has been received.
+                                *Paper has been accepted to SafeThings'19 and will be available soon. A CoRR version can be found <a href="https://arxiv.org/abs/1901.10062">here</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 m-t-30">
+                        <div class="col-md-6 col-md-push-3">
+                            <img src="/assets/images/iot-flows.png" class="centered-img w-200 h-220" alt="IoT-Flows image" />
+                            <h4>
+                                We're proposing a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against traditional and new attacks*.
+                            </h4>
+                            <p class="footnote">
+                                *Paper has been accepted to SERP4IoT'19 and will be available soon.
                             </p>
                         </div>
                     </div>

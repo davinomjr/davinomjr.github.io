@@ -50,48 +50,44 @@ body {
     background-size: cover;
 }
 
-.m-r-10{
-    margin-right: 10px !important;
-}
-
-.m-t-50{
-    margin-top: 50px !important;
-}
-
-.m-b-250{
-    margin-bottom: 250px;
+.h-130{
+    height: 130px;
 }
 
 .h-150{
-    height: 150px !important;
+    height: 150px;
 }
 
 .h-180{
-    height: 180px !important;
+    height: 180px;
 }
 
 .h-200{
-    height: 200px !important;
+    height: 200px;
 }
 
 .h-220{
-    height: 220px !important;
+    height: 220px;
 }
 
 .h-300{
-    height: 300px !important;
+    height: 300px;
 }
 
 .h-500 {
-    height: 500px !important;
+    height: 500px;
 }
 
 .h-700 {
-    height: 700px !important;
+    height: 700px;
 }
 
 .h-1000 {
-    height: 1000px !important;
+    height: 1000px;
+}
+
+.h-1300 {
+    height: 1300px;
 }
 
 
@@ -166,31 +162,35 @@ body {
 }
 
 .w-180{
-    width: 180px !important;
+    width: 180px;
 }
 
 .w-200{
-    width: 200px !important;
+    width: 200px;
 }
 
 .w-220 {
-    width: 220px !important;
+    width: 220px;
 }
 
 .w-230{
-    width: 230px !important;
+    width: 230px;
 }
 
 .w-250{
-    width: 250px !important;
+    width: 250px;
+}
+
+.w-270{
+    width: 270px;
 }
 
 .w-300{
-    width: 300px !important;
+    width: 300px;
 }
 
 .w-350{
-    width: 350px !important;
+    width: 350px;
 }
 
 .list-skills{
@@ -202,12 +202,9 @@ body {
     height: 150px;
 }
 
-.m-t-20{
-    margin-top: 20px !important;
-}
 
 #researcher {
-    background-color: #cac9c9;
+    background-color: #d8cdc7;
 }
 
 /* BIG BUTTONS */
@@ -331,4 +328,21 @@ a {
 
 h4 {
     font-size: 15px;
+}
+
+.m-t-20{
+    margin-top: 20px;
+}
+
+
+.m-r-10{
+    margin-right: 10px;
+}
+
+.m-t-50{
+    margin-top: 50px;
+}
+
+.m-b-250{
+    margin-bottom: 250px;
 }
