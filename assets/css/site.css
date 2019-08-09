@@ -101,7 +101,8 @@ body {
     height: 100%
 
     /* Specific width */
-    
+    width: 100% !important;
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -270,6 +271,9 @@ body {
             -o-transform: translate(0, 4px);
             transform: translate(0, 4px);
         }
+        .big-button {
+            color: white !important;
+        }
 /**/
 
 .footnote {
@@ -299,11 +303,11 @@ body {
 }
 
 a {
-    color: #d64533;
+    color: #d64533 !important;
 }
 
     a:visited {
-        color: #9e1100;
+        color: #9e1100 !important;
     }
 
 .horizontal-icons {
@@ -345,4 +349,16 @@ h4 {
 
 .m-b-250{
     margin-bottom: 250px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    width: 100% !important;
+}
+
+.fa-3x{
+    color: white !important;
 }
