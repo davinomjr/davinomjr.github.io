@@ -4,7 +4,7 @@ layout: default
 ---
 
 <div class="header">
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="main-nav">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,13 +26,13 @@ layout: default
     </div>
 
 
-<div class="parallax">
+<div class="parallax center-page">
     <div class="v-wrap">
         <article class="v-box">
             <div>
                 <p style="font-size:40px; color: white">Hello, I'm Davino ;)</p>
             </div>
-            <img src="/assets/images/Me.jpg" class="centered-img" alt="personal-photo" />
+            <img src="/assets/images/Me.png" class="centered-img" alt="personal-photo" />
             <ul class="horizontal-icons list-unstyled m-t-20 m-r-10">
                 <li>
                     <a href="https://github.com/davinomjr/" title="GitHub">
@@ -64,17 +64,9 @@ layout: default
     </div>
 </div>
 
-<div class="breaker">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="line"></div>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="breaker"></div>
 
-<div class="row no-padding h-1000" id="software-engineer" style="font-size:36px">
+<div class="no-padding h-1000" id="software-engineer" style="font-size:36px">
     <div class="col-md-12 m-t-20">
         <div class="v-wrap h-500">
             <article class="v-box">
@@ -90,10 +82,8 @@ layout: default
                     <div class="col-md-12">
                         <div class="col-md-4 col-md-push-4">
                             <h4>
-                                Active on both Web and Mobile development, I've worked at the industry for 4+ years as a Web developer
-                                and 3+ years on Mobile development as a self-employment consultant.
+                                Working with both Web and Mobile development, I've been active in the industry for 5+ years as a Web developer and 4+ years on Mobile development as a self-employment consultant.
                             </h4>
-                            <h4 style="margin-top: 15px;">Below are some of the technologies I have experience with.</h4>
                         </div>
                     </div>
                 </div>
@@ -129,7 +119,7 @@ layout: default
                                 <li>Kotlin</li>
                                 <li>React Extensions</li>
                                 <li>Firebase</li>
-                                <li>API/SDK</li>
+                                <li>API/SDK Development</li>
                                 <li>Program Analysis</li>
                                 <li>Security</li>
                             </ul>
@@ -143,7 +133,7 @@ layout: default
 
 <div class="breaker"></div>
 
-<div class="row no-padding h-1300" id="researcher" style="font-size:36px">
+<div class="no-padding h-1300" id="researcher" style="font-size:36px">
     <div class="col-md-12">
         <div class="v-wrap h-500">
             <article class="v-box">
@@ -159,8 +149,8 @@ layout: default
                     <div class="col-md-12">
                         <div class="col-md-6 col-md-push-3">
                             <h4>
-                                Graduated on Computer Science (C.S.), I'm currently finishing my Masters at
-                                <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a> on Software Engineering. As a Graduate Researcher, I'm part of a
+                                Graduated on Computer Science, I'm currently finishing my Masters (Q1 2020) at
+                                <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a>. As a Graduate Researcher, I'm part of a
                                 <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">joint-effort project</a> between US and Brazil addressing security problems on the Internet of Things (IoT). For more information, please refer to the official <a href="https://iot-flows.cin.ufpe.br/">web page</a> of the project.
                             </h4>
                             <h4>Below are some of the work I'm involved with.</h4>
@@ -214,7 +204,7 @@ layout: default
     </div>
 </div>
 
-<div class="row no-padding" id="end-box">
+<div class="no-padding" id="end-box">
     <div class="col-md-12">
         <div class="v-wrap h-300">
             <article class="v-box">

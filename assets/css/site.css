@@ -303,11 +303,11 @@ body {
 }
 
 a {
-    color: #d64533 !important;
+    color: #ea0000 !important;
 }
 
-    a:visited {
-        color: #9e1100 !important;
+    a:visited:not(.navbar-brand) {
+        color: #dc3d3d !important;
     }
 
 .horizontal-icons {
@@ -361,4 +361,15 @@ body{
 
 .fa-3x{
     color: white !important;
+}
+
+.center-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-nav{
+    border-color: transparent !important;
+    border-top: white !important;
 }
