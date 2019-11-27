@@ -182,8 +182,8 @@ layout: default
                                 could be leveraged to create attacks and exploit the smart devices*.
                             </h4>
                             <p class="footnote">
-                                *Paper has been accepted to SafeThings'19 and will be available soon. 
-                                <br/>A CoRR extended version can be found <a href="https://arxiv.org/abs/1901.10062">here</a>.
+                               *Published paper can be seen <a href="https://ieeexplore.ieee.org/document/8844591">here</a>.
+                               <br/>A CoRR extended version can be found <a href="https://arxiv.org/abs/1901.10062">here</a>.
                             </p>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ layout: default
                                 We're proposing a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
                             </h4>
                             <p class="footnote">
-                                *Paper has been accepted to SERP4IoT'19 and will be available soon.
+                                  *Published paper can be seen <a href="https://dl.acm.org/citation.cfm?id=3354006">here</a>.
                             </p>
                         </div>
                     </div>
