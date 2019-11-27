@@ -176,9 +176,9 @@ layout: default
                         <div class="col-md-6">
                             <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 h-220" alt="iot android image" />
                             <h4>
-                                We did a comprehensive analysis of IoT apps responsible for controlling the Top 100 best-selling IoT devices
-                                on the Amazon website to verify whether these apps contained potential
-                                vulnerabilities in terms of security and privacy. To our surprise, we found that most of these apps indeed
+                                We did a comprehensive analysis of mobile apps responsible for controlling the Top 100 best-selling IoT devices
+                                on Amazon to assess whether those apps contained potential
+                                vulnerabilities in terms of security and privacy. To our surprise, we found that most of these apps
                                 could be leveraged to create attacks and exploit the smart devices*.
                             </h4>
                             <p class="footnote">
