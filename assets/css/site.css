@@ -122,9 +122,14 @@ body {
 }
 
 .centered-img {
-    border-radius: 50%;
     width: 200px;
     height: 200px;
+}
+
+.personal-img {
+    border-radius: 50%;
+    width: 225px;
+    height: 225px;
 }
 
 .center {
@@ -134,7 +139,6 @@ body {
 
 /* Center div */
 .v-wrap {
-    height: 700px;
     white-space: nowrap;
     text-align: center;
 }
