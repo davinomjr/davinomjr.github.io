@@ -377,3 +377,7 @@ body{
     border-color: transparent !important;
     border-top: white !important;
 }
+
+.round-image{
+    border-radius: 50% !important;
+}

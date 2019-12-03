@@ -142,7 +142,7 @@ layout: default
                         <p style="font-size:30px; color: black">Researcher</p>
                     </div>
                     <div class="col-md-12">
-                        <img src="/assets/images/research.jpg" class="centered-img" alt="research icon" />
+                        <img src="/assets/images/research.jpg" class="centered-img round-image" alt="research icon" />
                     </div>
                 </div>
                 <div class="row">
@@ -160,7 +160,7 @@ layout: default
                 <div class="row" style="margin-top:30px;">
                     <div class="col-md-12">
                         <div class="col-md-6">
-                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-220 h-220" alt="smart-home image" />
+                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-220 h-220 round-image" alt="smart-home image" />
                             <h4>
                                 Targeting IoT applications,
                                 <a href="https://github.com/earlence/FlowFence_Release">FlowFence</a> is a
@@ -174,7 +174,7 @@ layout: default
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 h-220" alt="iot android image" />
+                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 h-220 round-image" alt="iot android image" />
                             <h4>
                                 We did a comprehensive analysis of mobile apps responsible for controlling the Top 100 best-selling IoT devices
                                 on Amazon to assess whether those apps contained potential
@@ -189,7 +189,7 @@ layout: default
                     </div>
                     <div class="col-md-12 m-t-30">
                         <div class="col-md-6 col-md-push-3">
-                            <img src="/assets/images/iot-flows.png" class="centered-img w-200 h-220" alt="IoT-Flows image" />
+                            <img src="/assets/images/iot-flows.png" class="centered-img w-200 h-220 round-image" alt="IoT-Flows image" />
                             <h4>
                                 We're proposing a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
                             </h4>
