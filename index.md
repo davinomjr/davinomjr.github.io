@@ -32,7 +32,7 @@ layout: default
             <div>
                 <p style="font-size:40px; color: white">Hello, I'm Davino ;)</p>
             </div>
-            <img src="/assets/images/Me.png" class="personal-img" alt="personal-photo" />
+            <img src="/assets/images/me_defesa.png" class="personal-img" alt="personal-photo" />
             <ul class="horizontal-icons list-unstyled m-t-20 m-r-10">
                 <li>
                     <a href="https://github.com/davinomjr/" title="GitHub">
@@ -139,7 +139,7 @@ layout: default
             <article class="v-box">
                 <div class="row m-t-20">
                     <div class="col-md-12">
-                        <p style="font-size:30px; color: black">Researcher</p>
+                        <p style="font-size:30px; color: black">Researcher, MSc</p>
                     </div>
                     <div class="col-md-12">
                         <img src="/assets/images/research.jpg" class="centered-img round-image" alt="research icon" />
@@ -149,11 +149,10 @@ layout: default
                     <div class="col-md-12">
                         <div class="col-md-6 col-md-push-3">
                             <h4>
-                                Graduated on Computer Science, I'm currently finishing my Masters (Q1 2020) at
-                                <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a>. As a Graduate Researcher, I'm part of a
+                                Graduated on Computer Science, I completed my Masters on Software Engineering at <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a>. As a researcher, I was part of a
                                 <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">joint-effort project</a> between US and Brazil addressing security problems on the Internet of Things (IoT). For more information, please refer to the official <a href="https://iot-flows.cin.ufpe.br/">web page</a> of the project.
                             </h4>
-                            <h4>Below are some of the work I'm involved with.</h4>
+                            <h4>Below are some of the work I was involved with.</h4>
                         </div>
                     </div>
                 </div>
@@ -176,7 +175,7 @@ layout: default
                         <div class="col-md-6">
                             <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 h-220 round-image" alt="iot android image" />
                             <h4>
-                                We did a comprehensive analysis of mobile apps responsible for controlling the Top 100 best-selling IoT devices
+                                As a visiting scholar on the University of Illinois at Urbana-Champaign (UIUC) and under supervision of Prof. <a href="http://mir.cs.illinois.edu/marinov/">Darko Marinov</a>, we did a comprehensive analysis of mobile apps responsible for controlling the Top 100 best-selling IoT devices
                                 on Amazon to assess whether those apps contained potential
                                 vulnerabilities in terms of security and privacy. To our surprise, we found that most of these apps
                                 could be leveraged to create attacks and exploit the smart devices*.
@@ -191,7 +190,7 @@ layout: default
                         <div class="col-md-6 col-md-push-3">
                             <img src="/assets/images/iot-flows.png" class="centered-img w-200 h-220 round-image" alt="IoT-Flows image" />
                             <h4>
-                                We're proposing a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
+                                We proposed a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
                             </h4>
                             <p class="footnote">
                                   *Published paper can be seen <a href="https://dl.acm.org/citation.cfm?id=3354006">here</a>.
