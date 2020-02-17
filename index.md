@@ -32,7 +32,7 @@ layout: default
             <div>
                 <p style="font-size:40px; color: white">Hello, I'm Davino ;)</p>
             </div>
-            <img src="/assets/images/me_defesa.png" class="personal-img" alt="personal-photo" />
+            <img src="/assets/images/me_Defesa.png" class="personal-img" alt="personal-photo" />
             <ul class="horizontal-icons list-unstyled m-t-20 m-r-10">
                 <li>
                     <a href="https://github.com/davinomjr/" title="GitHub">
