@@ -41,7 +41,7 @@ body {
     background-image: url("../images/background-test.jpg");
 
     /* Set a specific height */
-    height: 500px;
+    height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -88,6 +88,10 @@ body {
 
 .h-1300 {
     height: 1300px;
+}
+
+.h-100vh {
+    height: 100vh;
 }
 
 

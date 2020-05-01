@@ -66,9 +66,9 @@ layout: default
 
 <div class="breaker"></div>
 
-<div class="no-padding h-1000" id="software-engineer" style="font-size:36px">
-    <div class="col-md-12 m-t-20">
-        <div class="v-wrap h-500">
+<div class="no-padding h-100vh" id="software-engineer" style="font-size:36px">
+    <div class="col-md-12 m-t-20 content-box">
+        <div class="v-wrap">
             <article class="v-box">
                 <div class="row">
                     <div class="col-md-12">
@@ -90,7 +90,7 @@ layout: default
                 <div class="row">
                     <div class="col-md-12">
                         <div class="col-md-4">
-                            <img src="/assets/images/web-development.png" class="centered-img w-220 h-220" alt="web dev image" />
+                            <img src="/assets/images/web-development.png" class="centered-img w-220" alt="web dev image" />
                             <ul class="list-unstyled list-skills">
                                 <li>C#</li>
                                 <li>Java</li>
@@ -103,13 +103,13 @@ layout: default
                         </div>
                         <div class="col-md-4">
                             <div class="col-md-12 m-t-20">
-                                <img src="/assets/images/git.png" class="w-270 h-130" alt="git image" />
+                                <img src="/assets/images/git.png" class="w-270" alt="git image" />
                             </div>
                             <div class="col-md-12">
-                                <img src="/assets/images/web-services.jpg" class="w-230 h-180" alt="web-services image" />
+                                <img src="/assets/images/web-services.jpg" class="w-230" alt="web-services image" />
                             </div>
                             <div class="col-md-12 p-l-80">
-                                <img src="/assets/images/sql.png" class="w-180 h-180" alt="sql image" />
+                                <img src="/assets/images/sql.png" class="w-180" alt="sql image" />
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -133,9 +133,9 @@ layout: default
 
 <div class="breaker"></div>
 
-<div class="no-padding h-1300" id="researcher" style="font-size:36px">
-    <div class="col-md-12">
-        <div class="v-wrap h-500">
+<div class="no-padding h-100vh" id="researcher" style="font-size:36px">
+    <div class="col-md-12 content-box">
+        <div class="v-wrap">
             <article class="v-box">
                 <div class="row m-t-20">
                     <div class="col-md-12">
@@ -159,7 +159,7 @@ layout: default
                 <div class="row" style="margin-top:30px;">
                     <div class="col-md-12">
                         <div class="col-md-6">
-                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-220 h-220 round-image" alt="smart-home image" />
+                            <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-220 round-image" alt="smart-home image" />
                             <h4>
                                 Targeting IoT applications,
                                 <a href="https://github.com/earlence/FlowFence_Release">FlowFence</a> is a
@@ -173,7 +173,7 @@ layout: default
                             </p>
                         </div>
                         <div class="col-md-6">
-                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 h-220 round-image" alt="iot android image" />
+                            <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 round-image" alt="iot android image" />
                             <h4>
                                 As a visiting scholar on the University of Illinois at Urbana-Champaign (UIUC) and under supervision of Prof. <a href="http://mir.cs.illinois.edu/marinov/">Darko Marinov</a>, we did a comprehensive analysis of mobile apps responsible for controlling the Top 100 best-selling IoT devices
                                 on Amazon to assess whether those apps contained potential
@@ -188,7 +188,7 @@ layout: default
                     </div>
                     <div class="col-md-12 m-t-30">
                         <div class="col-md-6 col-md-push-3">
-                            <img src="/assets/images/iot-flows.png" class="centered-img w-200 h-220 round-image" alt="IoT-Flows image" />
+                            <img src="/assets/images/iot-flows.png" class="centered-img w-200 round-image" alt="IoT-Flows image" />
                             <h4>
                                 We proposed a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
                             </h4>
@@ -203,12 +203,12 @@ layout: default
     </div>
 </div>
 
-<div class="no-padding" id="end-box">
-    <div class="col-md-12">
-        <div class="v-wrap h-300">
+<div class="no-padding h-100vh" id="end-box">
+    <div class="col-md-12 content-box">
+        <div class="v-wrap">
             <article class="v-box">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 m-t-50">
                         <a href="mailto:davinomaurojr@gmail.com" class="big-button">
                             <span>Contact me</span>
                         </a>

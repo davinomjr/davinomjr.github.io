@@ -7,6 +7,16 @@ $(document).ready(function(){
     $("div.navbar-fixed-top").autoHidingNavbar();
     createSmoothTransitionLinks();
     setParallaxHeight();
+
+    $(window).resize(function(){
+      var containers = $(".h-100vh");
+      containers.each(function(i){
+          var contentBox = $(this).find(".content-box");
+          $(this).css("height", $(contentBox).height() + 50);
+      });
+    });
+
+    $(window).trigger("resize");
 });
 
 function createSmoothTransitionLinks(){
