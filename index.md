@@ -67,20 +67,20 @@ layout: default
 <div class="breaker"></div>
 
 <div class="no-padding h-100vh" id="software-engineer" style="font-size:36px">
-    <div class="col-md-12 m-t-20 content-box">
+    <div class="col-xs-12 m-t-20 content-box">
         <div class="v-wrap">
             <article class="v-box">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-xs-12">
                         <p style="font-size:30px; color: black">Software Engineer</p>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-xs-12">
                         <img src="/assets/images/code.jpg" class="centered-img skill-icon" alt="code icon" />
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-4 col-md-push-4">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4 col-xs-push-4">
                             <h4>
                                 Working with both Web and Mobile development, I've been active in the industry for 5+ years as a Web developer and 4+ years on Mobile development as a self-employment consultant.
                             </h4>
@@ -88,8 +88,8 @@ layout: default
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-4">
+                    <div class="col-xs-12">
+                        <div class="col-xs-4">
                             <img src="/assets/images/web-development.png" class="centered-img w-220" alt="web dev image" />
                             <ul class="list-unstyled list-skills">
                                 <li>C#</li>
@@ -101,18 +101,18 @@ layout: default
                                 <li>Ruby on Rails</li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
-                            <div class="col-md-12 m-t-20">
+                        <div class="col-xs-4">
+                            <div class="col-xs-12 m-t-20">
                                 <img src="/assets/images/git.png" class="w-270" alt="git image" />
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-xs-12">
                                 <img src="/assets/images/web-services.jpg" class="w-230" alt="web-services image" />
                             </div>
-                            <div class="col-md-12 p-l-80">
+                            <div class="col-xs-12 p-l-80">
                                 <img src="/assets/images/sql.png" class="w-180" alt="sql image" />
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-xs-4">
                             <img src="/assets/images/android-development.jpg" class="centered-img w-230" alt="android dev image" />
                             <ul class="list-unstyled list-skills">
                                 <li>Java</li>
@@ -134,20 +134,20 @@ layout: default
 <div class="breaker"></div>
 
 <div class="no-padding h-100vh" id="researcher" style="font-size:36px">
-    <div class="col-md-12 content-box">
+    <div class="col-xs-12 content-box">
         <div class="v-wrap">
             <article class="v-box">
                 <div class="row m-t-20">
-                    <div class="col-md-12">
+                    <div class="col-xs-12">
                         <p style="font-size:30px; color: black">Researcher, MSc</p>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-xs-12">
                         <img src="/assets/images/research.jpg" class="centered-img round-image" alt="research icon" />
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-6 col-md-push-3">
+                    <div class="col-xs-12">
+                        <div class="col-xs-6 col-xs-push-3">
                             <h4>
                                 Graduated on Computer Science, I completed my Masters on Software Engineering at <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a>. As a researcher, I was part of a
                                 <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">joint-effort project</a> between US and Brazil addressing security problems on the Internet of Things (IoT). For more information, please refer to the official <a href="https://iot-flows.cin.ufpe.br/">web page</a> of the project.
@@ -157,8 +157,8 @@ layout: default
                     </div>
                 </div>
                 <div class="row" style="margin-top:30px;">
-                    <div class="col-md-12">
-                        <div class="col-md-6">
+                    <div class="col-xs-12">
+                        <div class="col-xs-6">
                             <img src="/assets/images/smart-home-iot.jpg" class="centered-img w-220 round-image" alt="smart-home image" />
                             <h4>
                                 Targeting IoT applications,
@@ -172,7 +172,7 @@ layout: default
                                 *Published paper can be seen <a href="https://www.researchgate.net/publication/328651530_Securing_IoT_Apps_with_Fine-grained_Control_of_Information_Flows">here</a>.
                             </p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-xs-6">
                             <img src="/assets/images/iot-security-app.jpeg" class="centered-img w-220 round-image" alt="iot android image" />
                             <h4>
                                 As a visiting scholar on the University of Illinois at Urbana-Champaign (UIUC) and under supervision of Prof. <a href="http://mir.cs.illinois.edu/marinov/">Darko Marinov</a>, we did a comprehensive analysis of mobile apps responsible for controlling the Top 100 best-selling IoT devices
@@ -186,8 +186,8 @@ layout: default
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-12 m-t-30">
-                        <div class="col-md-6 col-md-push-3">
+                    <div class="col-xs-12 m-t-30">
+                        <div class="col-xs-6 col-xs-push-3">
                             <img src="/assets/images/iot-flows.png" class="centered-img w-200 round-image" alt="IoT-Flows image" />
                             <h4>
                                 We proposed a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
@@ -204,11 +204,11 @@ layout: default
 </div>
 
 <div class="no-padding h-100vh" id="end-box">
-    <div class="col-md-12 content-box">
+    <div class="col-xs-12 content-box">
         <div class="v-wrap">
             <article class="v-box">
                 <div class="row">
-                    <div class="col-md-12 m-t-50">
+                    <div class="col-xs-12 m-t-50">
                         <a href="mailto:davinomaurojr@gmail.com" class="big-button">
                             <span>Contact me</span>
                         </a>
