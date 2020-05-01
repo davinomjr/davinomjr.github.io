@@ -82,8 +82,9 @@ layout: default
                     <div class="col-xs-12">
                         <div class="col-xs-4 col-xs-push-4">
                             <h4>
-                                Working with both Web and Mobile development, I've been active in the industry for 5+ years as a Web developer and 4+ years on Mobile development as a self-employment consultant.
+                                Working with both Web and Mobile development, I've been active in the industry for 5+ years on Web development and 4+ years on Mobile development as a self-employment consultant.
                             </h4>
+                            <h4>Below are some of the technology I am familiar with:</h4>
                         </div>
                     </div>
                 </div>
@@ -149,10 +150,10 @@ layout: default
                     <div class="col-xs-12">
                         <div class="col-xs-6 col-xs-push-3">
                             <h4>
-                                Graduated on Computer Science, I completed my Masters on Software Engineering at <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a>. As a researcher, I was part of a
+                                I obtained my <a href="http://en.wikipedia.org/wiki/Master%27s_degree#Titles">M.Sc.</a> on Computer Science from <a class="no-break" href="https://www2.cin.ufpe.br/en/" >CIn-UFPE</a>. As a researcher, I was part of a
                                 <a href="https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf">joint-effort project</a> between US and Brazil addressing security problems on the Internet of Things (IoT). For more information, please refer to the official <a href="https://iot-flows.cin.ufpe.br/">web page</a> of the project.
                             </h4>
-                            <h4>Below are some of the work I was involved with.</h4>
+                            <h4>Below are some of the work I was involved with:</h4>
                         </div>
                     </div>
                 </div>
@@ -164,9 +165,7 @@ layout: default
                                 Targeting IoT applications,
                                 <a href="https://github.com/earlence/FlowFence_Release">FlowFence</a> is a
                                 framework built for development of secure IoT applications on the Android platform.
-                                Together with the University of Michigan (UMICH) and under supervision of Prof.
-                                <a href="http://web.eecs.umich.edu/~aprakash/">Atul Prakash</a>, I've extended the FlowFence framework to support
-                                protection of sensitive UI data and network requests on Android apps*.
+                                Under supervision of Prof. <a href="http://web.eecs.umich.edu/~aprakash/">Atul Prakash</a> at the University of Michigan (UMICH), I've extended the FlowFence framework to support protection of sensitive UI data and network requests on Android apps*.
                             </h4>
                             <p class="footnote">
                                 *Published paper can be seen <a href="https://www.researchgate.net/publication/328651530_Securing_IoT_Apps_with_Fine-grained_Control_of_Information_Flows">here</a>.
@@ -177,8 +176,8 @@ layout: default
                             <h4>
                                 As a visiting scholar on the University of Illinois at Urbana-Champaign (UIUC) and under supervision of Prof. <a href="http://mir.cs.illinois.edu/marinov/">Darko Marinov</a>, we did a comprehensive analysis of mobile apps responsible for controlling the Top 100 best-selling IoT devices
                                 on Amazon to assess whether those apps contained potential
-                                vulnerabilities in terms of security and privacy. To our surprise, we found that most of these apps
-                                could be leveraged to create attacks and exploit the smart devices*.
+                                vulnerabilities in terms of security and privacy. <strong>To our surprise, we found that most of these apps
+                                could be leveraged to create attacks and exploit the smart devices*.</strong>
                             </h4>
                             <p class="footnote">
                                *Published paper can be seen <a href="https://ieeexplore.ieee.org/document/8844591">here</a>.
@@ -190,7 +189,7 @@ layout: default
                         <div class="col-xs-6 col-xs-push-3">
                             <img src="/assets/images/iot-flows.png" class="centered-img w-200 round-image" alt="IoT-Flows image" />
                             <h4>
-                                We proposed a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via Complex Event Processing (CEP) rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
+                                We proposed a security system that leverages a traditional autonomic computer architecture originally introduced by IBM (<a href="https://www-03.ibm.com/autonomic/pdfs/AC%20Blueprint%20White%20Paper%20V7.pdf">MAPE-K</a>) to detect attacks on IoT infrastructures via <a href="https://www.research.ibm.com/haifa/dept/services/papers/cep_Jan07_nc.pdf">Complex Event Processing (CEP)</a> rules. The system acts on all TCP/IP network layers, promoting extensibility and a multilayer defense against both traditional and new attacks*.
                             </h4>
                             <p class="footnote">
                                   *Published paper can be seen <a href="https://dl.acm.org/citation.cfm?id=3354006">here</a>.
