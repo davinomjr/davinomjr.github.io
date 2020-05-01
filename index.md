@@ -140,7 +140,7 @@ layout: default
             <article class="v-box">
                 <div class="row m-t-20">
                     <div class="col-xs-12">
-                        <p style="font-size:30px; color: black">Researcher, MSc</p>
+                        <p style="font-size:30px; color: black">Researcher</p>
                     </div>
                     <div class="col-xs-12">
                         <img src="/assets/images/research.jpg" class="centered-img round-image" alt="research icon" />
