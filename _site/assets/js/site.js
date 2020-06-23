@@ -60,5 +60,6 @@ function createSmoothTransitionLinks(){
 
 function setParallaxHeight(){
   var height = $(window).height();
-  $(".parallax").css("height", height);
+  $(".parallax,.full-h").css("height", height);
+
 }
