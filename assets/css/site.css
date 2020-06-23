@@ -37,9 +37,6 @@ body {
 }
 
 .container-parallax {
-    /* The image used */
-    background-image: url("../images/background-test.jpg");
-
     /* Set a specific height */
     height: 100vh;
 
@@ -98,7 +95,7 @@ body {
 /* Parallax */
 .parallax {
     /* The image used */
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background_m.jpg");
 
     /* Set a specific height */
     min-height: 100%;
