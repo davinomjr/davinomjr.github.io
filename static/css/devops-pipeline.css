@@ -1,0 +1,37 @@
+/* DevOps Pipeline Theme */
+.parallax {
+    background: #1a1a2e;
+    background-image: 
+        linear-gradient(90deg, rgba(0, 255, 150, 0.1) 2px, transparent 2px),
+        linear-gradient(rgba(0, 255, 150, 0.1) 2px, transparent 2px),
+        linear-gradient(45deg, transparent 48%, rgba(0, 255, 150, 0.05) 49%, rgba(0, 255, 150, 0.05) 51%, transparent 52%);
+    background-size: 25px 25px, 25px 25px, 50px 50px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(0deg, transparent 48%, rgba(0, 255, 150, 0.1) 49%, rgba(0, 255, 150, 0.1) 51%, transparent 52%),
+        linear-gradient(90deg, transparent 48%, rgba(0, 255, 150, 0.1) 49%, rgba(0, 255, 150, 0.1) 51%, transparent 52%);
+    background-size: 30px 30px;
+    animation: pipeline-flow 8s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes pipeline-flow {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100vw); }
+}
+
+.terminal-text {
+    font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+    color: #00ff96;
+    text-shadow: 0 0 10px rgba(0, 255, 150, 0.6);
+}

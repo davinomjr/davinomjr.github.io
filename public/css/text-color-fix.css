@@ -1,0 +1,94 @@
+/* Fix text colors for matrix theme */
+
+/* Software Engineer section */
+#software-engineer h4,
+#software-engineer p,
+#software-engineer li {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3) !important;
+}
+
+#software-engineer h4 {
+    color: #00ff00 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+}
+
+/* Researcher section */
+#researcher h4,
+#researcher p,
+#researcher li {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3) !important;
+}
+
+#researcher h4 {
+    color: #00ff00 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+}
+
+/* Contact section */
+#end-box h4,
+#end-box p,
+#end-box li {
+    color: #ffffff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Links */
+#software-engineer a,
+#researcher a,
+#end-box a {
+    color: #00ff00 !important;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5) !important;
+}
+
+#software-engineer a:hover,
+#researcher a:hover,
+#end-box a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Section titles */
+#software-engineer p[style*="font-size:30px"],
+#researcher p[style*="font-size:30px"] {
+    color: #00ff00 !important;
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.8) !important;
+}
+
+/* Lists */
+.list-skills li {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Footnotes */
+.footnote {
+    color: #cccccc !important;
+    text-shadow: 0 0 3px rgba(204, 204, 204, 0.3) !important;
+}
+
+.footnote a {
+    color: #00ff00 !important;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5) !important;
+}
+
+/* Fix specific elements that might have conflicting styles */
+#researcher .content-box {
+    background: transparent !important;
+}
+
+#researcher strong {
+    color: #00ff00 !important;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.6) !important;
+}
+
+#software-engineer h3 {
+    color: #00ff00 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+}
+
+#researcher h3 {
+    color: #00ff00 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+}

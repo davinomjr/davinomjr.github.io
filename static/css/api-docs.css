@@ -1,0 +1,30 @@
+/* API Documentation Theme */
+.parallax {
+    background: #0d1117;
+    background-image: 
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, transparent 48%, rgba(0, 150, 255, 0.03) 49%, rgba(0, 150, 255, 0.03) 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(0, 255, 150, 0.03) 49%, rgba(0, 255, 150, 0.03) 51%, transparent 52%);
+    background-size: 40px 40px;
+    pointer-events: none;
+}
+
+.terminal-text {
+    font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+    color: #58a6ff;
+    text-shadow: 0 0 8px rgba(88, 166, 255, 0.4);
+}

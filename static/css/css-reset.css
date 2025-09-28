@@ -1,0 +1,28 @@
+/* CSS Reset to prevent flash */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Hide content until fully loaded */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Prevent FOUC */
+.parallax {
+    background-color: #000000 !important;
+}
+
+/* Ensure images don't cause layout shift */
+img {
+    max-width: 100%;
+    height: auto;
+}

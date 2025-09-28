@@ -138,7 +138,7 @@ layout: "default"
     <div class="col-xs-12 content-box">
         <div class="v-wrap">
             <article class="v-box">
-                <div class="row m-t-20">
+                <div class="row">
                     <div class="col-xs-12">
                         <p style="font-size:30px; color: black">Researcher</p>
                     </div>
@@ -195,22 +195,6 @@ layout: "default"
                                   *Published paper can be seen <a href="https://dl.acm.org/citation.cfm?id=3354006">here</a>.
                             </p>
                         </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-    </div>
-</div>
-
-<div class="no-padding h-100vh" id="end-box">
-    <div class="col-xs-12 content-box">
-        <div class="v-wrap">
-            <article class="v-box">
-                <div class="row">
-                    <div class="col-xs-12 m-t-50">
-                        <a href="mailto:davinomaurojr@gmail.com" class="big-button">
-                            <span>Contact me</span>
-                        </a>
                     </div>
                 </div>
             </article>

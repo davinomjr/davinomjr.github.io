@@ -1,0 +1,34 @@
+/* Dark Red Terminal Theme */
+.parallax {
+    background: #0a0000;
+    background-image: 
+        linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(transparent 50%, rgba(255, 0, 0, 0.1) 50%);
+    background-size: 100% 4px;
+    animation: red-matrix-rain 15s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes red-matrix-rain {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+}
+
+.terminal-text {
+    font-family: 'Courier New', monospace;
+    color: #ff0000;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.4);
+}

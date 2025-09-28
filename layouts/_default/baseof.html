@@ -2,13 +2,71 @@
 <html>
     <head>
         <title>{{ .Title }} - {{ .Site.Title }}</title>
+        
+        <!-- CSS Reset - Load first to prevent flash -->
+        <link rel="stylesheet" type="text/css" href="/css/css-reset.css" />
+        
+        <!-- Core CSS -->
         <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="/css/site.css" />
         <link rel="stylesheet" type="text/css" href="/css/all.css" />
+        
+        <!-- Backend Themes - Uncomment ONE to use -->
+        <link rel="stylesheet" type="text/css" href="/css/terminal-matrix.css" /> 
+        <!-- <link rel="stylesheet" type="text/css" href="/css/server-room.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/code-syntax.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/minimalist-dark.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/api-docs.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/circuit-board.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/database-schema.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/network-topology.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/binary-code.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/cloud-infrastructure.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/kubernetes.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/devops-pipeline.css" /> -->
+        
+        <!-- Dark Red Themes -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-terminal.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/crimson-server.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-circuit.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/blood-red-network.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-binary.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/scarlet-infrastructure.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-k8s.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-devops.css" /> -->
+        
+        <!-- Image loading fix - loaded last to override -->
+        <link rel="stylesheet" type="text/css" href="/css/image-loading-fix.css" />
+        
+        <!-- Text color fix for matrix theme -->
+        <link rel="stylesheet" type="text/css" href="/css/text-color-fix.css" />
+        
+        <!-- Tight spacing for compact layout -->
+        <link rel="stylesheet" type="text/css" href="/css/tight-spacing.css" />
 
         <script src="/js/jquery.min.js"></script>
         <script src="/js/jquery.bootstrap-autohidingnavbar.js"></script>
         <script src="/js/site.js"></script>
+        
+        <script>
+        // Prevent FOUC and smooth loading
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show body
+            document.body.classList.add('loaded');
+            
+            // Handle image loading
+            const images = document.querySelectorAll('.personal-img');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.classList.add('loaded');
+                });
+                // If image is already cached, show it immediately
+                if (img.complete) {
+                    img.classList.add('loaded');
+                }
+            });
+        });
+        </script>
     </head>
     <body>
         {{ block "main" . }}{{ end }}

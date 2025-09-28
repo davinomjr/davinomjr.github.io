@@ -1,0 +1,39 @@
+/* Kubernetes Theme */
+.parallax {
+    background: #0d1117;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(0, 150, 255, 0.1) 3px, transparent 3px),
+        radial-gradient(circle at 75% 75%, rgba(0, 150, 255, 0.1) 3px, transparent 3px),
+        radial-gradient(circle at 50% 50%, rgba(0, 150, 255, 0.1) 3px, transparent 3px);
+    background-size: 80px 80px, 120px 120px, 160px 160px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, transparent 48%, rgba(0, 150, 255, 0.1) 49%, rgba(0, 150, 255, 0.1) 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(0, 150, 255, 0.1) 49%, rgba(0, 150, 255, 0.1) 51%, transparent 52%),
+        linear-gradient(90deg, transparent 48%, rgba(0, 150, 255, 0.1) 49%, rgba(0, 150, 255, 0.1) 51%, transparent 52%),
+        linear-gradient(0deg, transparent 48%, rgba(0, 150, 255, 0.1) 49%, rgba(0, 150, 255, 0.1) 51%, transparent 52%);
+    background-size: 40px 40px;
+    animation: k8s-orchestrate 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes k8s-orchestrate {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+.terminal-text {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    color: #0099ff;
+    text-shadow: 0 0 12px rgba(0, 153, 255, 0.7);
+}

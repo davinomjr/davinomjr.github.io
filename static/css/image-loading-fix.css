@@ -1,0 +1,52 @@
+/* Fix image loading flash and layout issues */
+.personal-img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.personal-img.loaded {
+    opacity: 1;
+}
+
+/* Ensure content stays above matrix rain animation */
+.v-box,
+.content-box,
+.container,
+.navbar,
+.header,
+.parallax,
+#software-engineer,
+#researcher,
+#end-box {
+    position: relative !important;
+    z-index: 2 !important;
+    background: transparent !important;
+}
+
+/* Ensure terminal text styling */
+.terminal-text {
+    font-family: 'Courier New', monospace !important;
+    color: #00ff00 !important;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8) !important;
+}
+
+/* Prevent layout shifts */
+.v-box {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Smooth transitions for all elements */
+* {
+    transition: opacity 0.3s ease-in-out;
+}

@@ -1,0 +1,266 @@
+/* Dracula Theme - Dark purple theme with cyan accents */
+.parallax {
+    background: #282a36;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(189, 147, 249, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(139, 233, 253, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(255, 121, 198, 0.1) 0%, transparent 50%);
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(180deg, transparent 0%, rgba(40, 42, 54, 0.8) 50%, rgba(40, 42, 54, 0.9) 100%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g fill-rule="evenodd"><g fill="%236279a4" fill-opacity="0.1"><circle cx="7" cy="7" r="1"/><circle cx="27" cy="7" r="1"/><circle cx="47" cy="7" r="1"/><circle cx="7" cy="27" r="1"/><circle cx="27" cy="27" r="1"/><circle cx="47" cy="27" r="1"/><circle cx="7" cy="47" r="1"/><circle cx="27" cy="47" r="1"/><circle cx="47" cy="47" r="1"/></g></g></svg>');
+    background-size: 60px 60px;
+    animation: dracula-float 20s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes dracula-float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(5px) rotate(-1deg); }
+}
+
+.dracula-text {
+    font-family: 'Fira Code', 'Courier New', 'Monaco', monospace;
+    color: #f8f8f2;
+    text-shadow: 0 0 10px rgba(139, 233, 253, 0.3);
+    font-weight: 400;
+}
+
+.dracula-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        transparent 30%, 
+        rgba(139, 233, 253, 0.05) 50%, 
+        transparent 70%);
+    background-size: 200% 200%;
+    animation: dracula-glow 3s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes dracula-glow {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.7; }
+}
+
+/* Navbar styling */
+.header .navbar {
+    background: linear-gradient(135deg, #44475a 0%, #6272a4 100%);
+    border-bottom: 2px solid #bd93f9;
+    box-shadow: 0 2px 10px rgba(40, 42, 54, 0.5);
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 5px rgba(139, 233, 253, 0.3);
+    transition: all 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #50fa7b !important;
+    background-color: rgba(139, 233, 253, 0.1);
+}
+
+.navbar-brand {
+    color: #ff79c6 !important;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 121, 198, 0.5);
+}
+
+/* Content sections */
+.content-box {
+    background: rgba(40, 42, 54, 0.95);
+    border: 1px solid #6272a4;
+    box-shadow: 0 4px 20px rgba(40, 42, 54, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #8be9fd;
+    text-shadow: 0 0 5px rgba(139, 233, 253, 0.3);
+}
+
+p {
+    color: #f8f8f2;
+}
+
+/* Links */
+a {
+    color: #ffb86c !important;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #50fa7b !important;
+    text-shadow: 0 0 10px rgba(80, 250, 123, 0.5);
+}
+
+a:visited:not(.navbar-brand) {
+    color: #bd93f9 !important;
+}
+
+/* Skill icons and images */
+.skill-icon, .centered-img, .personal-img {
+    border: 2px solid #6272a4;
+    box-shadow: 0 0 15px rgba(139, 233, 253, 0.2);
+    transition: all 0.3s ease;
+}
+
+.skill-icon:hover, .centered-img:hover, .personal-img:hover {
+    border-color: #bd93f9;
+    box-shadow: 0 0 25px rgba(189, 147, 249, 0.4);
+    transform: scale(1.05);
+}
+
+/* Terminal text styling */
+.terminal-text {
+    color: #50fa7b;
+    text-shadow: 
+        0 0 5px rgba(80, 250, 123, 0.5),
+        0 0 10px rgba(80, 250, 123, 0.3);
+    font-family: 'Fira Code', 'Courier New', monospace;
+    position: relative;
+}
+
+.terminal-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, 
+        rgba(80, 250, 123, 0.1) 0%, 
+        transparent 70%);
+    pointer-events: none;
+    animation: terminal-pulse 2s ease-in-out infinite;
+}
+
+@keyframes terminal-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+/* Social icons */
+.horizontal-icons li a {
+    color: #f8f8f2;
+    transition: all 0.3s ease;
+}
+
+.horizontal-icons li a:hover {
+    color: #ff79c6;
+    text-shadow: 0 0 15px rgba(255, 121, 198, 0.6);
+    transform: translateY(-3px);
+}
+
+/* FontAwesome icons in Dracula theme */
+.fa-3x {
+    color: #bd93f9 !important;
+    transition: all 0.3s ease;
+}
+
+.fa-3x:hover {
+    color: #ff79c6 !important;
+    text-shadow: 0 0 15px rgba(255, 121, 198, 0.6);
+    transform: scale(1.1);
+}
+
+/* Big buttons */
+.big-button {
+    background: linear-gradient(135deg, #44475a 0%, #6272a4 100%);
+    border: 2px solid #bd93f9;
+    box-shadow: 
+        0 4px 15px rgba(189, 147, 249, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.big-button:hover span {
+    background: linear-gradient(135deg, #bd93f9 0%, #8be9fd 100%);
+    color: #282a36;
+    text-shadow: 0 0 10px rgba(40, 42, 54, 0.8);
+}
+
+.big-button:active span {
+    transform: translate(0, 2px);
+    background: linear-gradient(135deg, #6272a4 0%, #44475a 100%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .parallax::before {
+        background-size: 40px 40px;
+    }
+    
+    .content-box {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+/* Loading animation */
+.loaded .personal-img {
+    animation: dracula-fade-in 1s ease-out;
+}
+
+@keyframes dracula-fade-in {
+    0% { 
+        opacity: 0; 
+        transform: scale(0.8) translateY(20px); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: scale(1) translateY(0); 
+    }
+}
+
+/* Cyberpunk-style cursor effect */
+.parallax {
+    cursor: none;
+}
+
+.parallax::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #50fa7b 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transform: translate(-50%, -50%);
+}
+
+.parallax:hover::after {
+    opacity: 0.6;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus {
+    outline: 2px solid #50fa7b;
+    outline-offset: 2px;
+}

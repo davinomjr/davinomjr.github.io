@@ -1,0 +1,38 @@
+/* Dark Red Circuit Theme */
+.parallax {
+    background: #0a0000;
+    background-image: 
+        linear-gradient(90deg, rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+        radial-gradient(circle at 25% 25%, rgba(255, 0, 0, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 0, 0, 0.05) 0%, transparent 50%);
+    background-size: 20px 20px, 20px 20px, 100px 100px, 150px 150px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, transparent 48%, rgba(255, 0, 0, 0.1) 49%, rgba(255, 0, 0, 0.1) 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(255, 0, 0, 0.1) 49%, rgba(255, 0, 0, 0.1) 51%, transparent 52%);
+    background-size: 40px 40px;
+    animation: red-circuit-pulse 3s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes red-circuit-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+}
+
+.terminal-text {
+    font-family: 'Courier New', monospace;
+    color: #ff0000;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.4);
+}

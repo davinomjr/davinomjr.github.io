@@ -1,0 +1,39 @@
+/* Blood Red Network Theme */
+.parallax {
+    background: #0d0000;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 0, 0, 0.1) 2px, transparent 2px),
+        radial-gradient(circle at 75% 75%, rgba(255, 0, 0, 0.1) 2px, transparent 2px),
+        radial-gradient(circle at 50% 50%, rgba(255, 0, 0, 0.1) 2px, transparent 2px);
+    background-size: 100px 100px, 150px 150px, 200px 200px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        linear-gradient(45deg, transparent 48%, rgba(255, 0, 0, 0.1) 49%, rgba(255, 0, 0, 0.1) 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(255, 0, 0, 0.1) 49%, rgba(255, 0, 0, 0.1) 51%, transparent 52%),
+        linear-gradient(90deg, transparent 48%, rgba(255, 0, 0, 0.1) 49%, rgba(255, 0, 0, 0.1) 51%, transparent 52%),
+        linear-gradient(0deg, transparent 48%, rgba(255, 0, 0, 0.1) 49%, rgba(255, 0, 0, 0.1) 51%, transparent 52%);
+    background-size: 50px 50px;
+    animation: blood-network-pulse 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes blood-network-pulse {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.6; }
+}
+
+.terminal-text {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
