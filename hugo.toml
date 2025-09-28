@@ -1,0 +1,13 @@
+baseURL = 'https://davinomjr.com/'
+languageCode = 'en-us'
+title = 'Davino Mauro Junior'
+
+[params]
+  description = "Software Engineer & Researcher"
+  author = "Davino Mauro Junior"
+  email = "davinomaurojr@gmail.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
