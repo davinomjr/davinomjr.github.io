@@ -1,0 +1,133 @@
+/* Dracula Theme - Enhanced Visibility */
+body {
+    background: #282a36 !important;
+    background-image: 
+        linear-gradient(90deg, rgba(189, 147, 249, 0.3) 2px, transparent 2px),
+        linear-gradient(rgba(189, 147, 249, 0.3) 2px, transparent 2px) !important;
+    background-size: 15px 15px !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+html {
+    background: #282a36 !important;
+    background-image: 
+        linear-gradient(90deg, rgba(189, 147, 249, 0.3) 2px, transparent 2px),
+        linear-gradient(rgba(189, 147, 249, 0.3) 2px, transparent 2px) !important;
+    background-size: 15px 15px !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Enhanced Dracula matrix rain animation */
+html::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(transparent 50%, rgba(189, 147, 249, 0.4) 50%);
+    background-size: 100% 8px;
+    animation: matrix-rain 15s linear infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Apply enhanced Dracula background to sections */
+.parallax,
+#software-engineer,
+#researcher,
+#end-box,
+.container,
+.content-box,
+.v-box {
+    background: #282a36 !important;
+    background-image: 
+        linear-gradient(90deg, rgba(189, 147, 249, 0.3) 2px, transparent 2px),
+        linear-gradient(rgba(189, 147, 249, 0.3) 2px, transparent 2px) !important;
+    background-size: 15px 15px !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative !important;
+}
+
+.terminal-text {
+    font-family: 'Courier New', monospace;
+    color: #bd93f9;
+    text-shadow: 0 0 15px rgba(189, 147, 249, 0.9);
+}
+
+@keyframes matrix-rain {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+}
+
+/* Dracula Navbar */
+.header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    background: rgba(40, 42, 54, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+#main-nav {
+    background: transparent !important;
+    border: none !important;
+    margin-bottom: 0 !important;
+    min-height: 40px !important;
+    padding: 5px 0 !important;
+}
+
+.navbar-brand {
+    color: #bd93f9 !important;
+    text-shadow: 0 0 15px rgba(189, 147, 249, 0.9) !important;
+    font-family: 'Courier New', monospace !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    padding: 8px 15px !important;
+    line-height: 20px !important;
+}
+
+.navbar-nav > li > a {
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 8px rgba(248, 248, 242, 0.5) !important;
+    font-family: 'Courier New', monospace !important;
+    transition: all 0.3s ease !important;
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+}
+
+.navbar-nav > li > a:hover {
+    color: #bd93f9 !important;
+    text-shadow: 0 0 15px rgba(189, 147, 249, 0.9) !important;
+    background: rgba(189, 147, 249, 0.2) !important;
+}
+
+.navbar-toggle {
+    border-color: #bd93f9 !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #bd93f9 !important;
+}
+
+.navbar-header {
+    margin-bottom: 0 !important;
+}
+
+.navbar-collapse {
+    padding: 0 !important;
+}

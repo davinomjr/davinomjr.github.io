@@ -1,76 +1,76 @@
-/* Fix text colors for matrix theme */
+/* Fix text colors for Dracula theme */
 
 /* Software Engineer section */
 #software-engineer h4,
 #software-engineer p,
 #software-engineer li {
-    color: #ffffff !important;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3) !important;
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 5px rgba(248, 248, 242, 0.3) !important;
 }
 
-#software-engineer h4 {
-    color: #00ff00 !important;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+#software-engineer h3 {
+    color: #bd93f9 !important;
+    text-shadow: 0 0 10px rgba(189, 147, 249, 0.5) !important;
 }
 
 /* Researcher section */
 #researcher h4,
 #researcher p,
 #researcher li {
-    color: #ffffff !important;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3) !important;
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 5px rgba(248, 248, 242, 0.3) !important;
 }
 
-#researcher h4 {
-    color: #00ff00 !important;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+#researcher h3 {
+    color: #bd93f9 !important;
+    text-shadow: 0 0 10px rgba(189, 147, 249, 0.5) !important;
 }
 
 /* Contact section */
 #end-box h4,
 #end-box p,
 #end-box li {
-    color: #ffffff !important;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3) !important;
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 5px rgba(248, 248, 242, 0.3) !important;
 }
 
 /* Links */
 #software-engineer a,
 #researcher a,
 #end-box a {
-    color: #00ff00 !important;
-    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5) !important;
+    color: #bd93f9 !important;
+    text-shadow: 0 0 5px rgba(189, 147, 249, 0.5) !important;
 }
 
 #software-engineer a:hover,
 #researcher a:hover,
 #end-box a:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8) !important;
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 10px rgba(248, 248, 242, 0.8) !important;
 }
 
 /* Section titles */
 #software-engineer p[style*="font-size:30px"],
 #researcher p[style*="font-size:30px"] {
-    color: #00ff00 !important;
-    text-shadow: 0 0 15px rgba(0, 255, 0, 0.8) !important;
+    color: #bd93f9 !important;
+    text-shadow: 0 0 15px rgba(189, 147, 249, 0.8) !important;
 }
 
 /* Lists */
 .list-skills li {
-    color: #ffffff !important;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3) !important;
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 3px rgba(248, 248, 242, 0.3) !important;
 }
 
 /* Footnotes */
 .footnote {
-    color: #cccccc !important;
-    text-shadow: 0 0 3px rgba(204, 204, 204, 0.3) !important;
+    color: #6272a4 !important;
+    text-shadow: 0 0 3px rgba(98, 114, 164, 0.3) !important;
 }
 
 .footnote a {
-    color: #00ff00 !important;
-    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5) !important;
+    color: #bd93f9 !important;
+    text-shadow: 0 0 5px rgba(189, 147, 249, 0.5) !important;
 }
 
 /* Fix specific elements that might have conflicting styles */
@@ -79,16 +79,85 @@
 }
 
 #researcher strong {
-    color: #00ff00 !important;
-    text-shadow: 0 0 8px rgba(0, 255, 0, 0.6) !important;
+    color: #bd93f9 !important;
+    text-shadow: 0 0 8px rgba(189, 147, 249, 0.6) !important;
 }
 
 #software-engineer h3 {
-    color: #00ff00 !important;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+    color: #bd93f9 !important;
+    text-shadow: 0 0 10px rgba(189, 147, 249, 0.5) !important;
 }
 
 #researcher h3 {
-    color: #00ff00 !important;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5) !important;
+    color: #bd93f9 !important;
+    text-shadow: 0 0 10px rgba(189, 147, 249, 0.5) !important;
+}
+
+/* Fix ALL remaining text colors for Dracula theme */
+h1, h2, h3, h4, h5, h6 {
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 5px rgba(248, 248, 242, 0.3) !important;
+}
+
+p {
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 3px rgba(248, 248, 242, 0.2) !important;
+}
+
+li {
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 3px rgba(248, 248, 242, 0.2) !important;
+}
+
+/* Override any remaining green text */
+* {
+    color: #f8f8f2 !important;
+}
+
+/* But keep links purple */
+a {
+    color: #bd93f9 !important;
+    text-shadow: 0 0 5px rgba(189, 147, 249, 0.5) !important;
+}
+
+a:hover {
+    color: #f8f8f2 !important;
+    text-shadow: 0 0 10px rgba(248, 248, 242, 0.8) !important;
+}
+
+/* Keep terminal text purple */
+.terminal-text {
+    color: #bd93f9 !important;
+    text-shadow: 0 0 15px rgba(189, 147, 249, 0.9) !important;
+}
+
+/* Force override ALL green text with maximum specificity */
+body * {
+    color: #f8f8f2 !important;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #f8f8f2 !important;
+}
+
+body p {
+    color: #f8f8f2 !important;
+}
+
+body li {
+    color: #f8f8f2 !important;
+}
+
+/* Keep links purple with maximum specificity */
+body a {
+    color: #bd93f9 !important;
+}
+
+body a:hover {
+    color: #f8f8f2 !important;
+}
+
+/* Keep terminal text purple */
+body .terminal-text {
+    color: #bd93f9 !important;
 }

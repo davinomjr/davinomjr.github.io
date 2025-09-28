@@ -6,7 +6,7 @@
     height: 200px !important;
     object-fit: cover;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(248, 248, 242, 0.1);
     display: block;
     margin: 0 auto;
 }
@@ -33,17 +33,22 @@
 /* Ensure terminal text styling */
 .terminal-text {
     font-family: 'Courier New', monospace !important;
-    color: #00ff00 !important;
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8) !important;
+    color: #bd93f9 !important;
+    text-shadow: 0 0 15px rgba(189, 147, 249, 0.9) !important;
 }
 
-/* Prevent layout shifts */
+/* Prevent layout shifts and remove any square backgrounds */
 .v-box {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: transparent !important;
+}
+
+.content-box {
+    background: transparent !important;
 }
 
 /* Smooth transitions for all elements */
