@@ -94,9 +94,9 @@ html::before {
 .navbar-brand {
     color: #bd93f9 !important;
     text-shadow: 0 0 15px rgba(189, 147, 249, 0.9) !important;
-    font-family: 'Courier New', monospace !important;
+    font-family: 'Helvetica Neue', monospace !important;
     font-weight: bold !important;
-    font-size: 18px !important;
+    font-size: 20px !important;
     padding: 8px 15px !important;
     line-height: 20px !important;
 }
@@ -104,10 +104,10 @@ html::before {
 .navbar-nav > li > a {
     color: #f8f8f2 !important;
     text-shadow: 0 0 8px rgba(248, 248, 242, 0.5) !important;
-    font-family: 'Courier New', monospace !important;
+    font-family: 'Helvetica Neue', monospace !important;
     transition: all 0.3s ease !important;
-    padding: 8px 15px !important;
-    font-size: 14px !important;
+    padding: 10px 15px !important;
+    font-size: 18px !important;
 }
 
 .navbar-nav > li > a:hover {
