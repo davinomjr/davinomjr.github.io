@@ -231,11 +231,10 @@ a:visited:not(.navbar-brand) {
 
 /* Cyberpunk-style cursor effect */
 .parallax {
-    /* cursor: none; - Removed to fix square cursor issue on some systems */
+    cursor: none;
 }
 
-/* Custom cursor effect removed to fix square cursor issue on desktop */
-/* .parallax::after {
+.parallax::after {
     content: '';
     position: fixed;
     top: 0;
@@ -253,7 +252,7 @@ a:visited:not(.navbar-brand) {
 
 .parallax:hover::after {
     opacity: 0.6;
-} */
+}
 
 /* Smooth scrolling */
 html {

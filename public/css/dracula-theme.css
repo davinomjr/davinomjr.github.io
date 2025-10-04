@@ -1,13 +1,13 @@
 /* Dracula Theme - Enhanced Visibility */
 body {
     background: #282a36 !important;
-    background-image: 
+    /* background-image: 
         linear-gradient(90deg, rgba(189, 147, 249, 0.3) 2px, transparent 2px),
         linear-gradient(rgba(189, 147, 249, 0.3) 2px, transparent 2px) !important;
     background-size: 15px 15px !important;
     background-attachment: fixed !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important; */
     position: relative !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -15,13 +15,13 @@ body {
 
 html {
     background: #282a36 !important;
-    background-image: 
+    /* background-image: 
         linear-gradient(90deg, rgba(189, 147, 249, 0.3) 2px, transparent 2px),
         linear-gradient(rgba(189, 147, 249, 0.3) 2px, transparent 2px) !important;
     background-size: 15px 15px !important;
     background-attachment: fixed !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important; */
     position: relative !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -42,6 +42,7 @@ html::before {
     z-index: 1;
 }
 
+
 /* Apply enhanced Dracula background to sections */
 .parallax,
 #software-engineer,
@@ -51,13 +52,13 @@ html::before {
 .content-box,
 .v-box {
     background: #282a36 !important;
-    background-image: 
+    /* background-image: 
         linear-gradient(90deg, rgba(189, 147, 249, 0.3) 2px, transparent 2px),
         linear-gradient(rgba(189, 147, 249, 0.3) 2px, transparent 2px) !important;
     background-size: 15px 15px !important;
     background-attachment: fixed !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat !important; */
     position: relative !important;
 }
 
