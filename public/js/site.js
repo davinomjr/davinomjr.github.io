@@ -5,19 +5,31 @@
 /*Smooth scroll*/
 $(document).ready(function(){
     $("div.navbar-fixed-top").autoHidingNavbar();
+    setupMobileNavToggle();
     createSmoothTransitionLinks();
-    setParallaxHeight();
-
-    $(window).resize(function(){
-      var containers = $(".h-100vh");
-      containers.each(function(i){
-          var contentBox = $(this).find(".content-box");
-          $(this).css("height", $(contentBox).height() + 50);
-      });
-    });
-
-    $(window).trigger("resize");
 });
+
+function setupMobileNavToggle() {
+  var toggle = document.querySelector(".navbar-toggle");
+  var menu = document.querySelector(".navbar-collapse");
+
+  if (!toggle || !menu) {
+    return;
+  }
+
+  toggle.addEventListener("click", function() {
+    var isOpen = menu.classList.contains("in");
+    menu.classList.toggle("in", !isOpen);
+    toggle.setAttribute("aria-expanded", (!isOpen).toString());
+  });
+
+  menu.querySelectorAll("a[href^='#']").forEach(function(link) {
+    link.addEventListener("click", function() {
+      menu.classList.remove("in");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 
 function createSmoothTransitionLinks(){
   // Select all links with hashes
@@ -28,8 +40,8 @@ function createSmoothTransitionLinks(){
     .click(function(event) {
       // On-page links
       if (
-        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-        && 
+        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+        &&
         location.hostname == this.hostname
       ) {
         // Figure out element to scroll to
@@ -56,10 +68,4 @@ function createSmoothTransitionLinks(){
         }
       }
     });
-}
-
-function setParallaxHeight(){
-  var height = $(window).height();
-  $(".parallax,.full-h").css("height", height);
-
 }

@@ -1,7 +1,6 @@
 /* Fix image loading flash and layout issues */
 .personal-img {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
     width: 200px !important;
     height: 200px !important;
     object-fit: cover;
@@ -51,7 +50,4 @@
     background: transparent !important;
 }
 
-/* Smooth transitions for all elements */
-* {
-    transition: opacity 0.3s ease-in-out;
-}
+/* Keep transitions scoped to components to avoid global repaint cost */

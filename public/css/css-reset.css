@@ -6,16 +6,6 @@ html, body {
     color: #ffffff;
 }
 
-/* Hide content until fully loaded */
-body {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-body.loaded {
-    opacity: 1;
-}
-
 /* Prevent FOUC */
 .parallax {
     background-color: #000000 !important;

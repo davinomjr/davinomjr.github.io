@@ -65,8 +65,8 @@ layout: "default"
 </div>
 
 <div class="breaker"></div>
-<div class="no-padding full-h" id="software-engineer" style="font-size:36px">
-    <div class="col-xs-12 m-t-20 content-box">
+<div class="no-padding full-h" style="font-size:36px">
+    <div class="col-xs-12 m-t-20 content-box" id="software-engineer">
         <div class="v-wrap">
             <article class="v-box">
                 <div class="row">
@@ -124,7 +124,7 @@ layout: "default"
                                 <img src="/images/aws.png" class="w-180" alt="aws image" />
                             </div>
                             <div class="col-xs-12">
-                                <img src="/images/grafana.jpg" class="w-180" alt="aws image" />
+                                <img src="/images/grafana.png" class="w-180 grafana-sm" alt="aws image" />
                             </div>
                             <div class="col-xs-12">
                                 <img src="/images/sql.png" style="padding-left: 20px"class="w-180" alt="sql image" />
@@ -157,8 +157,8 @@ layout: "default"
 
 <div class="breaker"></div>
 
-<div class="no-padding h-100vh" id="researcher" style="font-size:36px">
-    <div class="col-xs-12 content-box">
+<div class="no-padding h-100vh" style="font-size:36px">
+    <div class="col-xs-12 content-box" id="researcher">
         <div class="v-wrap">
             <article class="v-box">
                 <div class="row">

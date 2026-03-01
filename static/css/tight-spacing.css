@@ -63,15 +63,19 @@ p {
     margin: 10px 0 !important;
 }
 
-/* Tighten column spacing */
-.col-xs-4,
-.col-xs-6,
-.col-xs-12 {
+/* Tighten content column spacing without affecting global Bootstrap layout */
+#software-engineer .col-xs-4,
+#software-engineer .col-xs-6,
+#software-engineer .col-xs-12,
+#researcher .col-xs-4,
+#researcher .col-xs-6,
+#researcher .col-xs-12 {
     padding: 5px !important;
 }
 
 /* Reduce section title spacing */
-p[style*="font-size:30px"] {
+p[style*="font-size:30px"],
+h2[style*="font-size:30px"] {
     margin: 15px 0 !important;
     padding: 5px 0 !important;
 }
@@ -125,7 +129,22 @@ body {
     margin: 5px auto !important;
 }
 
-.w-220, .w-230, .w-270, .w-180, .w-200 {
+.w-220,
+.w-230,
+.w-270,
+.w-180,
+.w-200 {
     max-width: 100px !important;
     height: auto !important;
+}
+
+@media (max-width: 767px) {
+    /* Stack content columns on narrow screens for readability */
+    #software-engineer .col-xs-4,
+    #researcher .col-xs-6 {
+        width: 100% !important;
+        float: none !important;
+        left: auto !important;
+        right: auto !important;
+    }
 }
