@@ -139,12 +139,122 @@ body {
 }
 
 @media (max-width: 767px) {
-    /* Stack content columns on narrow screens for readability */
+    /* Stack ALL content columns on mobile */
     #software-engineer .col-xs-4,
+    #software-engineer .col-xs-6,
     #researcher .col-xs-6 {
         width: 100% !important;
         float: none !important;
         left: auto !important;
         right: auto !important;
+    }
+
+    /* Remove push/pull on mobile - keeps content centered */
+    .col-xs-push-3,
+    .col-xs-push-4 {
+        left: auto !important;
+    }
+
+    /* Prevent horizontal overflow from v-wrap nowrap */
+    .v-wrap {
+        white-space: normal !important;
+    }
+
+    .v-wrap:before {
+        display: none !important;
+    }
+
+    /* Scale down section font-size (overrides inline 36px) */
+    .no-padding[style*="font-size"] {
+        font-size: 20px !important;
+    }
+
+    /* Use min-height instead of fixed height on mobile */
+    .h-100vh {
+        height: auto !important;
+        min-height: 100vh !important;
+    }
+
+    .parallax,
+    .center-page {
+        height: auto !important;
+        min-height: 100vh !important;
+    }
+
+    /* Fix iOS: background-attachment fixed doesn't work */
+    .parallax {
+        background-attachment: scroll !important;
+    }
+
+    /* Responsive images on mobile */
+    .w-180,
+    .w-200,
+    .w-220,
+    .w-230,
+    .w-250,
+    .w-270,
+    .w-300,
+    .w-350 {
+        max-width: 140px !important;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .centered-img {
+        max-width: 120px !important;
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .personal-img {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    /* Scale down section titles */
+    p[style*="font-size:40px"] {
+        font-size: 26px !important;
+    }
+
+    p[style*="font-size:30px"] {
+        font-size: 22px !important;
+    }
+
+    /* Readable text on mobile */
+    h4 {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        word-wrap: break-word !important;
+    }
+
+    .list-skills {
+        font-size: 16px !important;
+    }
+
+    .footnote {
+        font-size: 11px !important;
+    }
+
+    /* Compact icon row */
+    .horizontal-icons li {
+        margin: 0 3px !important;
+    }
+
+    .fa-3x {
+        font-size: 2em !important;
+    }
+
+    /* Reduce padding on container */
+    .container {
+        padding: 5px 10px !important;
+    }
+
+    /* Fix navbar brand truncation */
+    .navbar-brand {
+        font-size: 16px !important;
+        max-width: 200px !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
     }
 }
