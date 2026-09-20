@@ -843,7 +843,7 @@ a.card:hover .card-title { color: var(--c, var(--purple)); }
 
 .proj {
   display: grid;
-  grid-template-columns: clamp(150px, 17vw, 215px) clamp(78px, 8vw, 105px) minmax(0, 1fr) 3rem;
+  grid-template-columns: clamp(150px, 17vw, 215px) clamp(78px, 8vw, 105px) minmax(0, 1fr);
   align-items: baseline;
   gap: 0.35rem var(--gap-m);
   padding: 0.75rem 0.5rem;
@@ -872,13 +872,6 @@ a.card:hover .card-title { color: var(--c, var(--purple)); }
   line-height: 1.5;
 }
 
-.proj-year {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--muted);
-  text-align: right;
-}
-
 .proj-more {
   margin-top: var(--gap-m);
   font-family: var(--font-mono);
@@ -892,7 +885,6 @@ a.card:hover .card-title { color: var(--c, var(--purple)); }
     grid-template-columns: minmax(0, 1fr) auto;
   }
   .proj-desc { grid-column: 1 / -1; }
-  .proj-year { grid-row: 1; grid-column: 2; }
 }
 
 /* -------------------------------------------------------- 11. Research */
