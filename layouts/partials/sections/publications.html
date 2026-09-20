@@ -1,0 +1,35 @@
+{{ $pubs := sort .Site.Data.publications "year" "desc" }}
+{{ $me := "Davino Mauro Junior" }}
+<section class="section" id="publications">
+  <div class="shell">
+    {{ partial "section-head.html" (dict "title" "publications" "count" (printf "%d peer-reviewed" (len $pubs))) }}
+
+    <div class="pubs">
+      {{ range $i, $p := $pubs }}
+        {{- $bib := printf "@%s{%s,\n  author    = {%s},\n  title     = {%s},\n  booktitle = {%s},\n  year      = {%d},\n  doi       = {%s}\n}" $p.type $p.key (delimit $p.authors " and ") $p.title $p.venue $p.year $p.doi -}}
+        <article class="pub reveal" style="--d:{{ mul $i 50 }}ms">
+          <div class="pub-year">{{ $p.year }}</div>
+          <div>
+            <h3 class="pub-title">{{ $p.title }}</h3>
+            <p class="pub-authors">
+              {{- range $j, $a := $p.authors -}}
+                {{- if $j }}, {{ end -}}
+                {{- if eq $a $me }}<span class="me">{{ $a }}</span>{{ else }}{{ $a }}{{ end -}}
+              {{- end -}}
+            </p>
+            <p class="pub-venue">
+              <span class="badge">{{ $p.venue_short }}</span>{{ $p.venue }}
+            </p>
+            {{ with $p.note }}<p class="pub-note">{{ . }}</p>{{ end }}
+            <div class="pub-links">
+              {{ range $p.links }}
+                <a class="pub-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>
+              {{ end }}
+              <button class="pub-link" type="button" data-copy="{{ $bib }}">BibTeX</button>
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

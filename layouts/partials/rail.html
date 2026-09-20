@@ -1,0 +1,8 @@
+<nav class="rail" aria-label="Page progress">
+  {{ range .Site.Params.nav }}
+    <a href="#{{ .id }}" data-raillink="{{ .id }}">
+      <span>{{ .label }}</span>
+      <span class="tick" aria-hidden="true"></span>
+    </a>
+  {{ end }}
+</nav>

@@ -1,0 +1,25 @@
+{{ $projects := .Site.Data.projects }}
+<section class="section section-quiet" id="projects">
+  <div class="shell">
+    {{ partial "section-head.html" (dict "title" "side projects" "count" "personal repos") }}
+
+    <ul class="proj-list reveal">
+      {{ range $projects }}
+        <li>
+          <a class="proj" href="{{ .url }}" target="_blank" rel="noopener">
+            <span class="proj-name">{{ .name }}</span>
+            <span class="proj-lang">{{ .lang }}</span>
+            <span class="proj-desc">{{ .description }}</span>
+            <span class="proj-year">{{ .year }}</span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+    <p class="proj-more">
+      <a href="https://github.com/davinomjr" target="_blank" rel="noopener">
+        All repositories on GitHub {{ partial "icon.html" "external" }}
+      </a>
+    </p>
+  </div>
+</section>

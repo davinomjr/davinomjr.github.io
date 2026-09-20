@@ -1,73 +1,42 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang | default "en" }}">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-        <meta name="author" content="{{ .Site.Params.author }}" />
-        <meta name="theme-color" content="#282a36" />
-        <link rel="canonical" href="{{ .Permalink }}" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#282a36">
+  <meta name="color-scheme" content="dark">
 
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="{{ .Site.Title }}" />
-        <meta property="og:title" content="{{ .Title }}" />
-        <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
-        <meta property="og:url" content="{{ .Permalink }}" />
+  <title>{{ if .IsHome }}{{ .Site.Title }} · {{ .Site.Params.currentRole }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <link rel="canonical" href="{{ .Permalink }}">
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="{{ .Title }}" />
-        <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ .Site.Title }} · {{ .Site.Params.currentRole }}">
+  <meta property="og:description" content="{{ .Site.Params.description }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "images/me.jpeg" | absURL }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ .Site.Title }} · {{ .Site.Params.currentRole }}">
+  <meta name="twitter:description" content="{{ .Site.Params.description }}">
+  <meta name="twitter:image" content="{{ "images/me.jpeg" | absURL }}">
 
-        <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-        
-        <!-- CSS Reset - Load first to prevent flash -->
-        <link rel="stylesheet" type="text/css" href="/css/css-reset.css" />
-        
-        <!-- Core CSS -->
-        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-        <link rel="stylesheet" type="text/css" href="/css/site.css" />
-        <link rel="stylesheet" type="text/css" href="/css/all.css" />
-        
-        <!-- Backend Themes - Uncomment ONE to use -->
-        <link rel="stylesheet" type="text/css" href="/css/text-color-fix.css" />
-        <link rel="stylesheet" type="text/css" href="/css/dracula-theme.css" /> 
-        <!-- <link rel="stylesheet" type="text/css" href="/css/server-room.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/code-syntax.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/minimalist-dark.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/api-docs.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/circuit-board.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/database-schema.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/network-topology.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/binary-code.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/cloud-infrastructure.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/kubernetes.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/devops-pipeline.css" /> -->
-        
-        <!-- Dark Red Themes -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-terminal.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/crimson-server.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-circuit.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/blood-red-network.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-binary.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/scarlet-infrastructure.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-k8s.css" /> -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/dark-red-devops.css" /> -->
-        
-        <!-- Image loading fix - loaded last to override -->
-        <link rel="stylesheet" type="text/css" href="/css/image-loading-fix.css" />
-        
-        
-        <!-- Text color fix for matrix theme -->
-        
-        
-        <!-- Tight spacing for compact layout -->
-        <link rel="stylesheet" type="text/css" href="/css/tight-spacing.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 
-        <script src="/js/jquery.min.js" defer></script>
-        <script src="/js/jquery.bootstrap-autohidingnavbar.js" defer></script>
-        <script src="/js/site.js" defer></script>
-    </head>
-    <body>
-        {{ block "main" . }}{{ end }}
-    </body>
+  {{ partial "schema.html" . }}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  {{ partial "nav.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "cmdk.html" . }}
+  <script src="{{ "js/main.js" | relURL }}" defer></script>
+</body>
 </html>

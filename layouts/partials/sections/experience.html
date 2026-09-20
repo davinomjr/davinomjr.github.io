@@ -1,0 +1,68 @@
+{{ $exp := .Site.Data.experience }}
+<section class="section" id="experience">
+  <div class="shell">
+    {{ partial "section-head.html" (dict "title" "experience" "count" (printf "%d roles · since 2018" (len $exp))) }}
+
+    <ol class="timeline">
+      {{ range $i, $job := $exp }}
+        <li class="tl-item reveal a-{{ $job.accent | default "purple" }}{{ if $job.current }} is-current{{ end }}" style="--d:{{ mul $i 60 }}ms">
+          <span class="tl-dot" aria-hidden="true"></span>
+          <article class="tl-card">
+            <header class="tl-top">
+              <h3 class="tl-role">{{ $job.role }}</h3>
+              <span class="tl-company">{{ $job.company }}</span>
+              <span class="tl-dates">{{ $job.start }} – {{ $job.end }}</span>
+            </header>
+
+            <p class="tl-meta">
+              {{ with $job.team }}{{ . }} · {{ end }}{{ $job.location }}
+            </p>
+
+            {{ with $job.summary }}<p class="tl-summary">{{ . }}</p>{{ end }}
+
+            {{ with $job.surfaces }}
+              <div class="surfaces">
+                <span class="surfaces-label">{{ $job.surfaces_label | default "Surface area" }}</span>
+                <ul class="surfaces-list">
+                  {{ range . }}
+                    <li class="surface{{ if .lead }} is-lead{{ end }}">
+                      <span class="surface-name">{{ .name }}</span>
+                      <span class="surface-note">{{ .note }}</span>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+
+            {{ with $job.highlights }}
+              <ul class="tl-highlights">
+                {{ range . }}<li>{{ . }}</li>{{ end }}
+              </ul>
+            {{ end }}
+
+            {{ with $job.stack }}
+              <ul class="chips">
+                {{ range . }}<li class="chip">{{ . }}</li>{{ end }}
+              </ul>
+            {{ end }}
+          </article>
+        </li>
+      {{ end }}
+    </ol>
+
+    {{ with .Site.Data.education }}
+      <div class="edu-grid">
+        {{ range $i, $e := . }}
+          <article class="edu reveal" style="--d:{{ mul $i 60 }}ms">
+            <h3>{{ $e.degree }}{{ with $e.field }} <span style="color:var(--comment);font-weight:400">· {{ . }}</span>{{ end }}</h3>
+            <div class="school">
+              {{ if $e.url }}<a href="{{ $e.url }}" target="_blank" rel="noopener">{{ $e.school }}</a>{{ else }}{{ $e.school }}{{ end }}
+            </div>
+            <div class="when">{{ $e.start }} – {{ $e.end }} · {{ $e.location }}</div>
+            {{ with $e.note }}<p class="note">{{ . }}</p>{{ end }}
+          </article>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

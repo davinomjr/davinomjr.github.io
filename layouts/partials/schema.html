@@ -1,0 +1,18 @@
+{{- $sameAs := slice -}}
+{{- range .Site.Params.social -}}
+  {{- if not (hasPrefix .url "mailto:") -}}{{- $sameAs = $sameAs | append .url -}}{{- end -}}
+{{- end -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" .Site.Params.author
+  "url" .Site.BaseURL
+  "email" (printf "mailto:%s" .Site.Params.email)
+  "image" (absURL "images/me.jpeg")
+  "jobTitle" .Site.Params.currentRole
+  "worksFor" (dict "@type" "Organization" "name" .Site.Params.currentCompany "url" .Site.Params.currentCompanyURL)
+  "address" (dict "@type" "PostalAddress" "addressLocality" "São Paulo" "addressCountry" "BR")
+  "description" .Site.Params.description
+  "sameAs" $sameAs
+-}}
+<script type="application/ld+json">{{ $schema | jsonify }}</script>

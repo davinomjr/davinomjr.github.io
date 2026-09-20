@@ -1,0 +1,65 @@
+- id: languages
+  label: Languages
+  accent: green
+  items:
+    - name: Go
+      note: Primary at Uber
+    - name: Clojure
+      note: Four years at Nubank
+    - name: Java
+    - name: Kotlin
+    - name: C#/.NET
+    - name: TypeScript
+    - name: SQL
+    - name: Python
+    - name: Swift
+
+- id: security
+  label: Security & Identity
+  accent: red
+  items:
+    - name: OAuth 2.0 / OIDC
+    - name: JWT
+    - name: RBAC
+    - name: Applied cryptography
+    - name: Zero Trust architecture
+    - name: Device attestation
+
+- id: clients
+  label: Clients & SDKs
+  accent: orange
+  items:
+    - name: Android SDK
+      note: Primary surface
+    - name: iOS SDK
+      note: Platform parity
+    - name: Device provisioning flows
+    - name: On-device key storage
+    - name: SDK versioning & compatibility
+    - name: Device login & management UI
+
+- id: backend
+  label: Backend
+  accent: purple
+  items:
+    - name: Distributed systems
+    - name: Microservices
+    - name: Event-driven architecture
+    - name: gRPC
+    - name: REST API design
+    - name: Apache Kafka
+    - name: Kubernetes
+    - name: High-QPS / low-latency services
+
+- id: data
+  label: Data & Observability
+  accent: cyan
+  items:
+    - name: MySQL
+    - name: Cassandra
+    - name: DynamoDB
+    - name: Datomic
+    - name: Oracle
+    - name: M3 / Grafana
+    - name: Prometheus
+    - name: Jaeger

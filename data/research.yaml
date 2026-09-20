@@ -1,0 +1,48 @@
+intro: >-
+  During my M.Sc. at CIn-UFPE I was part of a
+  [joint US–Brazil project](https://www.nsf.gov/pubs/2017/nsf17024/nsf17024.pdf)
+  on security in the Internet of Things, working with the University of Michigan and
+  the University of Illinois at Urbana-Champaign.
+
+projects:
+  - title: Extending FlowFence for UI and network flows
+    image: /images/smart-home-iot.jpg
+    alt: Smart home devices
+    accent: purple
+    affiliation: University of Michigan
+    advisor: Atul Prakash
+    advisor_url: http://web.eecs.umich.edu/~aprakash/
+    body: >-
+      [FlowFence](https://github.com/earlence/FlowFence_Release) is a framework for
+      building secure IoT applications on Android. Under Prof. Atul Prakash at UMICH,
+      I extended it to protect sensitive UI data and network requests in Android apps.
+    paper: junior2018flowfence
+
+  - title: Vulnerability surface of the top 100 IoT devices
+    image: /images/iot-security-app.jpeg
+    alt: Device security analysis on mobile
+    accent: red
+    affiliation: University of Illinois at Urbana-Champaign
+    advisor: Darko Marinov
+    advisor_url: http://mir.cs.illinois.edu/marinov/
+    body: >-
+      As a visiting scholar at UIUC under Prof. Darko Marinov, we analysed the companion
+      apps controlling the 100 best-selling IoT devices on Amazon for security and
+      privacy flaws. **Most of these apps could be leveraged to attack and exploit the
+      smart devices they control.**
+    paper: junior2019vulnerability
+
+  - title: "IoT-Flows: multilayer intrusion detection"
+    image: /images/iot-flows.png
+    alt: IoT-Flows architecture
+    accent: cyan
+    affiliation: CIn-UFPE
+    body: >-
+      A security system applying IBM's
+      [MAPE-K](https://doi.org/10.1109/MC.2003.1160055)
+      autonomic architecture to detect attacks on IoT infrastructure through
+      [Complex Event Processing](https://en.wikipedia.org/wiki/Complex_event_processing)
+      rules. It operates across all TCP/IP layers, giving extensible multilayer defence
+      against both known and novel attacks, with a rule-authoring interface usable by
+      non-experts.
+    paper: junior2019multilayer

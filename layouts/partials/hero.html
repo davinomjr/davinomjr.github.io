@@ -1,0 +1,42 @@
+<section class="hero" id="top">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow one" aria-hidden="true"></div>
+  <div class="hero-glow two" aria-hidden="true"></div>
+
+  <div class="shell">
+    <div class="hero-layout">
+      <div>
+        <p class="hero-eyebrow reveal">
+          <span class="chip-live">Builder</span>
+          {{ .Site.Params.tenure }} · {{ .Site.Params.location }}
+        </p>
+
+        <h1 class="reveal" style="--d:60ms">{{ .Site.Title }}</h1>
+
+        <p class="hero-role reveal" style="--d:120ms">
+          <span class="arrow" aria-hidden="true">▸</span>
+          <span data-roles='{{ .Site.Params.roles | jsonify }}'>{{ index .Site.Params.roles 0 }}</span>
+          <span class="caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-tagline reveal" style="--d:180ms">{{ .Site.Params.tagline }}</p>
+
+        <div class="hero-actions reveal" style="--d:240ms">
+          <a class="btn btn-primary" href="#experience">
+            {{ partial "icon.html" "arrow-down" }} See the work
+          </a>
+          <a class="btn" href="https://github.com/davinomjr" target="_blank" rel="noopener">
+            {{ partial "icon.html" "github" }} GitHub
+          </a>
+          <button class="btn" type="button" data-copy="{{ .Site.Params.email }}">
+            {{ partial "icon.html" "copy" }} <span>{{ .Site.Params.email }}</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-portrait reveal" style="--d:120ms">
+        <img src="{{ .Site.Params.avatar }}" alt="Portrait of {{ .Site.Params.author }}" width="260" height="260" fetchpriority="high">
+      </div>
+    </div>
+  </div>
+</section>

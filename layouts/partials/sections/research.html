@@ -1,0 +1,41 @@
+{{ $r := .Site.Data.research }}
+{{ $pubs := .Site.Data.publications }}
+<section class="section" id="research">
+  <div class="shell">
+    {{ partial "section-head.html" (dict "title" "research" "count" "M.Sc. · device security") }}
+
+    <div class="research-intro reveal">{{ $r.intro | markdownify }}</div>
+
+    <div class="research-list">
+      {{ range $i, $item := $r.projects }}
+        <article class="research-item reveal a-{{ $item.accent | default "purple" }}" style="--d:{{ mul $i 60 }}ms">
+          <figure>
+            <img src="{{ $item.image }}" alt="{{ $item.alt }}" loading="lazy" width="400" height="300">
+          </figure>
+          <div>
+            <h3>{{ $item.title }}</h3>
+            <p class="research-affil">
+              {{ $item.affiliation }}
+              {{- with $item.advisor }} · advised by
+                {{- if $item.advisor_url }} <a href="{{ $item.advisor_url }}" target="_blank" rel="noopener">{{ . }}</a>
+                {{- else }} {{ . }}{{ end }}
+              {{- end }}
+            </p>
+            <div class="research-body">{{ $item.body | markdownify }}</div>
+
+            {{ with $item.paper }}
+              {{ $key := . }}
+              {{ range where $pubs "key" $key }}
+                <ul class="chips" style="margin-top:var(--gap-s)">
+                  {{ range .links }}
+                    <li><a class="pub-link" href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>

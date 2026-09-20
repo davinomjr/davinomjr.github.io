@@ -1,0 +1,40 @@
+<div class="cmdk" id="cmdk" hidden role="dialog" aria-modal="true" aria-label="Command palette">
+  <div class="cmdk-panel">
+    <input class="cmdk-input" id="cmdk-input" type="text" placeholder="Jump to a section, paper or link…" autocomplete="off" spellcheck="false" aria-label="Search">
+    <div class="cmdk-list" id="cmdk-list" role="listbox"></div>
+    <div class="cmdk-foot">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+      <span><kbd>↵</kbd> open</span>
+      <span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+<script type="application/json" id="cmdk-data">
+{{- $items := slice -}}
+{{- range .Site.Params.nav -}}
+  {{- $items = $items | append (dict "label" .label "kind" "section" "icon" "hash" "href" (printf "#%s" .id)) -}}
+{{- end -}}
+{{- range .Site.Data.publications -}}
+  {{- $url := printf "https://doi.org/%s" .doi -}}
+  {{- $items = $items | append (dict "label" (printf "%s (%d)" .title .year) "kind" "paper" "icon" "external" "href" $url) -}}
+{{- end -}}
+{{- range .Site.Data.projects -}}
+  {{- $items = $items | append (dict "label" .name "kind" "repo" "icon" "github" "href" .url) -}}
+{{- end -}}
+{{- range .Site.Params.social -}}
+  {{- $items = $items | append (dict "label" .name "kind" "link" "icon" .icon "href" .url) -}}
+{{- end -}}
+{{- $items = $items | append (dict "label" (printf "Copy email · %s" .Site.Params.email) "kind" "action" "icon" "copy" "copy" .Site.Params.email) -}}
+{{ $items | jsonify | safeJS }}
+</script>
+
+<template id="cmdk-icons">
+  <span data-icon="hash">{{ partial "icon.html" "hash" }}</span>
+  <span data-icon="external">{{ partial "icon.html" "external" }}</span>
+  <span data-icon="github">{{ partial "icon.html" "github" }}</span>
+  <span data-icon="linkedin">{{ partial "icon.html" "linkedin" }}</span>
+  <span data-icon="dblp">{{ partial "icon.html" "dblp" }}</span>
+  <span data-icon="mail">{{ partial "icon.html" "mail" }}</span>
+  <span data-icon="copy">{{ partial "icon.html" "copy" }}</span>
+</template>

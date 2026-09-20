@@ -1,0 +1,23 @@
+<header class="nav" id="site-nav">
+  <div class="shell nav-inner">
+    <a href="#top" class="nav-brand">
+      <span class="dot" aria-hidden="true"></span>
+      {{ .Site.Params.shortName | upper }}
+    </a>
+
+    <nav class="nav-links" id="nav-links" aria-label="Sections">
+      {{ range .Site.Params.nav }}
+        <a href="#{{ .id }}" data-navlink="{{ .id }}">{{ .label }}</a>
+      {{ end }}
+    </nav>
+
+    <button class="nav-kbd" type="button" data-cmdk-open aria-label="Open command palette">
+      <span>Jump to</span>
+      <kbd>⌘K</kbd>
+    </button>
+
+    <button class="nav-toggle" type="button" id="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle menu">
+      {{ partial "icon.html" "menu" }}
+    </button>
+  </div>
+</header>

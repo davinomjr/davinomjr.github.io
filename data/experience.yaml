@@ -1,0 +1,75 @@
+- company: Uber
+  team: Identity Platform (Core Services)
+  role: Senior Software Engineer
+  start: Sep 2025
+  end: Present
+  current: true
+  location: São Paulo, SP
+  accent: green
+  summary: >-
+    Device Identity for non-human accounts (autonomous vehicles, in-car tablets and
+    service accounts), architecting secure authentication and authorization systems
+    and device operational infrastructure at scale. My team owns the path end to end: the
+    identity services themselves, the client SDKs that devices integrate against, and
+    the web surface for device login, provisioning and management.
+  surfaces_label: Surface area
+  surfaces:
+    - name: Backend
+      note: Identity services, APIs, authorization
+      lead: true
+    - name: Android SDK
+      note: Primary device integration surface
+      lead: true
+    - name: Web
+      note: Device login, provisioning, management
+      lead: true
+    - name: iOS SDK
+      note: Platform parity
+  highlights:
+    - Architected cryptographic authentication for autonomous vehicle tablets (on-device key generation, device-signed JWTs, SHA-256 SPKI fingerprint validation) and device lifecycle management supporting multiple tablet types without disruption, establishing a Zero Trust model and reusable patterns for other device types.
+    - Built and maintain the client SDKs, Android first with iOS at parity, that let partner apps provision, attest and authenticate devices without reimplementing the identity protocol themselves.
+    - Implemented fine-grained authorization for OAuth endpoints and mentored engineers across geos on security patterns.
+    - Built a reusable device observability framework spanning four domains (authentication, device lifecycle, external dependencies and security), enabling faster device rollouts through metrics instrumentation, error categorization and operational dashboards.
+    - Founding on-call member within two months of joining; built test automation infrastructure and designed an AI-driven on-call assistant using MCP.
+  stack: [Go, Java, Kotlin, Swift, TypeScript, gRPC, OAuth 2.0, Zero Trust, Kubernetes]
+
+- company: Nubank
+  role: Lead Software Engineer
+  start: Mar 2024
+  end: Sep 2025
+  location: São Paulo, SP / Remote
+  accent: purple
+  summary: >-
+    Led the engineering team behind the platforms powering B3-operated Variable Income
+    and Treasury Direct investment products.
+  highlights:
+    - Coordinated two teams building a platform-driven solution for investments custody portability as part of the 1App migration project.
+    - Built a solution to process over 1.6 billion records for the backfill of historical Treasury Direct movement data.
+  stack: [Clojure, Datomic, Kafka, Kubernetes, AWS]
+
+- company: Nubank
+  role: Senior Software Engineer
+  start: Oct 2021
+  end: Mar 2024
+  location: São Paulo, SP / Remote
+  accent: purple
+  summary: >-
+    Technical lead of Everest, Nubank's internal funds distribution system.
+  highlights:
+    - Built complex features from scratch, including fund conversion, position tracking and tax calculation, delivering the platform in under seven months and enabling funds to be distributed on Nubank without third-party involvement.
+    - Technical focal point for the launch of Nu Reserva Imediata, the largest fund by number of customers in Brazil.
+  stack: [Clojure, Datomic, Kafka, DynamoDB]
+
+- company: Pitang
+  role: Senior Software Engineering Consultant
+  start: Dec 2018
+  end: Oct 2021
+  location: Recife, PE / Remote
+  accent: cyan
+  summary: >-
+    Consultant developer on ATSP, AXA's central platform for insurance and travel
+    products in the Americas, consisting of a web portal plus REST/SOAP APIs integrating several
+    third-party services.
+  highlights:
+    - Collaborated with a multinational team across seven countries; the project was regarded by the client as a success, resulting in AMEX becoming an AXA partner with over 100,000 active customers.
+  stack: [Java, C#/.NET, REST, SOAP, Oracle]

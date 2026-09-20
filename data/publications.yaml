@@ -1,0 +1,75 @@
+# Metadata verified against Semantic Scholar (DOIs are canonical).
+- key: junior2024usability
+  title: A Usability Study on the Creation of Intrusion Detection Rules on IoT Networks
+  authors: [Davino Mauro Junior, Kiev Gama]
+  venue: International Workshop on Software Engineering Research & Practices for the IoT
+  venue_short: SERP4IoT @ ICSE
+  year: 2024
+  type: inproceedings
+  doi: 10.1145/3643794.3648281
+  links:
+    - label: DOI
+      url: https://doi.org/10.1145/3643794.3648281
+
+- key: junior2020userfriendly
+  title: A User-friendly Approach to Write and Enforce Rules for Detecting Anomalous Network Traffic in IoT Environments
+  authors: [Davino Mauro Junior, Kiev Gama]
+  venue: Workshops of the International Conference on Software Engineering
+  venue_short: ICSEW
+  year: 2020
+  type: inproceedings
+  doi: 10.1145/3387940.3392248
+  links:
+    - label: DOI
+      url: https://doi.org/10.1145/3387940.3392248
+
+- key: junior2019vulnerability
+  title: A Study of Vulnerability Analysis of Popular Smart Devices Through Their Companion Apps
+  authors: [Davino Mauro Junior, Luis Melo, Hao Lu, Marcelo d'Amorim, Atul Prakash]
+  venue: IEEE Security and Privacy Workshops
+  venue_short: IEEE SPW
+  year: 2019
+  type: inproceedings
+  doi: 10.1109/SPW.2019.00042
+  featured: true
+  note: >-
+    Extended preprint circulated as “Beware of the App! On the Vulnerability Surface
+    of Smart Devices through their Companion Apps”.
+  links:
+    - label: IEEE
+      url: https://ieeexplore.ieee.org/document/8844591
+    - label: DOI
+      url: https://doi.org/10.1109/SPW.2019.00042
+    - label: arXiv
+      url: https://arxiv.org/abs/1901.10062
+
+- key: junior2019multilayer
+  title: Towards a Multilayer Strategy against Attacks on IoT Environments
+  authors:
+    - Davino Mauro Junior
+    - Walber M. Rodrigues
+    - Kiev Gama
+    - José A. Suruagy
+    - Paulo André da S. Gonçalves
+  venue: International Workshop on Software Engineering Research & Practices for the IoT
+  venue_short: SERP4IoT @ ICSE
+  year: 2019
+  type: inproceedings
+  doi: 10.1109/SERP4IoT.2019.00010
+  links:
+    - label: DOI
+      url: https://doi.org/10.1109/SERP4IoT.2019.00010
+
+- key: junior2018flowfence
+  title: Securing IoT Apps with Fine-grained Control of Information Flows
+  authors: [Davino Mauro Junior, Kiev Gama, Atul Prakash]
+  venue: Simpósio Brasileiro de Segurança da Informação e de Sistemas Computacionais
+  venue_short: SBSeg
+  year: 2018
+  type: inproceedings
+  doi: 10.5753/sbseg.2018.4263
+  links:
+    - label: DOI
+      url: https://doi.org/10.5753/sbseg.2018.4263
+    - label: arXiv
+      url: https://arxiv.org/abs/1810.13367

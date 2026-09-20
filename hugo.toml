@@ -1,13 +1,75 @@
 baseURL = 'https://davinomjr.com/'
 languageCode = 'en-us'
 title = 'Davino Mauro Junior'
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Software Engineer & Researcher"
+  description = "Senior Software Engineer at Uber working on identity and distributed backend systems, with published research on device security."
   author = "Davino Mauro Junior"
+  shortName = "Davino Junior"
   email = "davinomaurojr@gmail.com"
+  location = "São Paulo, Brazil"
+  tenure = "10+ years"
+  avatar = "/images/me.jpeg"
+  currentRole = "Senior Software Engineer"
+  currentCompany = "Uber"
+  currentCompanyURL = "https://www.uber.com/"
+
+  # Rotating hero line
+  roles = [
+    "Distributed Systems",
+    "Identity & Zero Trust",
+    "Backend at Scale",
+    "Device Security Research",
+  ]
+
+  tagline = "I build large-scale distributed backend systems. At Uber that means Device Identity E2E: backend services, the Android and iOS SDKs client apps integrate against, and the Web surface for device login, provisioning and management. Before that, I built financial platforms at Nubank handling billions of records."
+
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/davinomjr"
+  icon = "github"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/davinomjr"
+  icon = "linkedin"
+
+[[params.social]]
+  name = "DBLP"
+  url = "https://dblp.org/pid/230/8155.html"
+  icon = "dblp"
+
+[[params.social]]
+  name = "Email"
+  url = "mailto:davinomaurojr@gmail.com"
+  icon = "mail"
+
+[[params.nav]]
+  id = "experience"
+  label = "Experience"
+
+[[params.nav]]
+  id = "skills"
+  label = "Skills"
+
+[[params.nav]]
+  id = "research"
+  label = "Research"
+
+[[params.nav]]
+  id = "publications"
+  label = "Publications"
+
+[[params.nav]]
+  id = "projects"
+  label = "Projects"
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[minify]
+  disableHTML = true

@@ -1,0 +1,6 @@
+{{- /* ctx: dict "title" "..." "count" "..." */ -}}
+<div class="section-head reveal">
+  <h2>{{ .title }}</h2>
+  <span class="rule" aria-hidden="true"></span>
+  {{ with .count }}<span class="count">{{ . }}</span>{{ end }}
+</div>

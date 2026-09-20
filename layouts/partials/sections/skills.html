@@ -1,0 +1,29 @@
+{{ $groups := .Site.Data.skills }}
+<section class="section" id="skills">
+  <div class="shell">
+    {{ partial "section-head.html" (dict "title" "skills") }}
+
+    <div class="skill-filters reveal" role="group" aria-label="Filter skills by area">
+      <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+      {{ range $groups }}
+        <button class="filter" type="button" data-filter="{{ .id }}" aria-pressed="false">{{ .label }}</button>
+      {{ end }}
+    </div>
+
+    <div class="skill-groups">
+      {{ range $i, $g := $groups }}
+        <div class="skill-group reveal a-{{ $g.accent | default "purple" }}" data-group="{{ $g.id }}" style="--d:{{ mul $i 60 }}ms">
+          <h3>{{ $g.label }}</h3>
+          <ul class="skill-list">
+            {{ range $g.items }}
+              <li class="skill">
+                <span>{{ .name }}</span>
+                {{ with .note }}<span class="note">{{ . }}</span>{{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

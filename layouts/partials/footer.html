@@ -1,0 +1,28 @@
+<footer class="footer" id="contact">
+  <div class="shell">
+    <div class="footer-top">
+      <div>
+        <h2>Let's talk!</h2>
+        <p class="lede">
+          Open to conversations about distributed systems, identity and platform
+          engineering, or anything device security related.
+        </p>
+      </div>
+
+      <ul class="social">
+        {{ range .Site.Params.social }}
+          <li>
+            <a href="{{ .url }}" title="{{ .name }}" aria-label="{{ .name }}"
+               {{ if not (hasPrefix .url "mailto:") }}target="_blank" rel="noopener"{{ end }}>
+              {{ partial "icon.html" .icon }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© {{ now.Year }} {{ .Site.Params.author }}</span>
+    </div>
+  </div>
+</footer>

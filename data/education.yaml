@@ -1,0 +1,20 @@
+- degree: M.Sc. in Computer Science
+  field: Software Engineering
+  school: Federal University of Pernambuco
+  short: CIn-UFPE
+  url: https://www2.cin.ufpe.br/
+  start: "2017"
+  end: "2020"
+  location: Recife, PE
+  note: >-
+    Joint US–Brazil research on device security in collaboration with UIUC and the
+    University of Michigan: extensible detection of network attacks across the IoT
+    ecosystem, published in peer-reviewed venues.
+
+- degree: B.Sc. in Computer Science
+  school: Catholic University of Pernambuco
+  short: UNICAP
+  url: https://www.unicap.br/
+  start: "2013"
+  end: "2017"
+  location: Recife, PE

@@ -1,0 +1,57 @@
+# Selected public work. Full list: github.com/davinomjr
+- name: investments-portfolio-manager
+  lang: Go
+  accent: cyan
+  year: "2026"
+  url: https://github.com/davinomjr/investments-portfolio-manager
+  description: >-
+    Portfolio manager for B3 and IBKR assets: CVM earnings ingestion, FII metrics,
+    Monte Carlo simulations and market sentiment analysis.
+  tags: [Go, Finance, Simulation]
+
+- name: finance-manager
+  lang: TypeScript
+  accent: purple
+  year: "2026"
+  url: https://github.com/davinomjr/finance-manager
+  description: >-
+    Personal finance tracking and budgeting application.
+  tags: [TypeScript]
+
+- name: ran-legacy / ran-new
+  lang: Java · Kotlin
+  accent: green
+  year: "2018"
+  url: https://github.com/davinomjr/ran-legacy
+  description: >-
+    Android application for administering the RAN (Rapid Automatized Naming) test,
+    used in cognitive and reading-fluency assessment.
+  tags: [Android, Kotlin, Research tooling]
+
+- name: iotivity-android-client
+  lang: Java
+  accent: red
+  year: "2017"
+  url: https://github.com/davinomjr/iotivity-android-client
+  description: >-
+    IoTivity client and air-conditioner demo built during device security research,
+    covering device discovery and control over the OCF stack.
+  tags: [IoT, Android, IoTivity]
+
+- name: portal-c3
+  lang: JavaScript
+  accent: orange
+  year: "2018"
+  url: https://github.com/davinomjr/portal-c3
+  description: >-
+    Portal for the Computer Science course at UNICAP.
+  tags: [JavaScript, Web]
+
+- name: robocode-AI
+  lang: Java
+  accent: yellow
+  year: "2017"
+  url: https://github.com/davinomjr/robocode-AI
+  description: >-
+    An AI-driven combat strategy for the Robocode tank simulation.
+  tags: [AI, Java]
