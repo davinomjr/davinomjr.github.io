@@ -5,7 +5,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  description = "Senior Software Engineer at Uber working on identity and distributed backend systems, with published research on device security."
+  description = "Senior Software Engineer at Uber working on identity and distributed systems, with published research on device security."
   author = "Davino Mauro Junior"
   shortName = "Davino Junior"
   email = "davinomaurojr@gmail.com"
