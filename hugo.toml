@@ -24,7 +24,7 @@ disableKinds = ["taxonomy", "term"]
     "Device Security Research",
   ]
 
-  tagline = "I build large-scale distributed systems. At Uber that means Device Identity E2E: backend services, the Android and iOS SDKs apps integrate with, and the Web surface for device login, provisioning and management. Before that, I built financial platforms at Nubank handling millions of transactions daily."
+  tagline = "I build large-scale distributed systems. At Uber that means Device Identity E2E: backend services, the Android and iOS SDKs apps integrate with, and the Web surface for device provisioning, login and management. Before that, I built financial platforms at Nubank handling millions of transactions daily."
 
 [[params.social]]
   name = "GitHub"
